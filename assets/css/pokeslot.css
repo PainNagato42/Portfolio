@@ -6,7 +6,7 @@
 /****************************************************************/
 /* MISE EN PAGE */
 body {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_backgroud.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_backgroud.png");
   background-repeat: no-repeat;
   background-size: 100%;
   color: white;
@@ -141,24 +141,24 @@ body {
 .btn-spin {
   right: 50%;
   transform: translateX(50%);
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_btn_spin.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_btn_spin.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 120px;
   height: 120px;
 }
 .btn_moins {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_btn_moins.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_btn_moins.png");
 }
 .btn_plus {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_btn_plus.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_btn_plus.png");
 }
 #moins:active,
 #plus:active {
   transform: scale(1.2);
 }
 .btn_info {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_info.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_info.png");
   bottom: -10%;
   right: -13%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -194,7 +194,7 @@ body {
   z-index: 99;
 }
 .cross {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_cross.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_cross.png");
   width: 47px;
   height: 52px;
   top: 1%;
@@ -219,35 +219,35 @@ body {
   margin: 15px auto;
 }
 .img_info {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_10.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_10.png");
   width: 100px;
   height: 100px;
   margin-right: 15px;
   background-repeat: no-repeat;
 }
 .img_j {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_j.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_j.png");
 }
 .img_q {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_q.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_q.png");
 }
 .img_k {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_k.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_k.png");
 }
 .img_a {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_a.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_a.png");
 }
 .img_S4 {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_joelle.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_joelle.png");
 }
 .img_S3 {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_pikachu.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_pikachu.png");
 }
 .img_S2 {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_rocket.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_rocket.png");
 }
 .img_S1 {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_sacha.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_sacha.png");
 }
 
 .contain_ligne_info div.flex p {
@@ -260,39 +260,39 @@ body {
 }
 
 .ligne_info {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_1.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/info_ligne_1.png");
   width: 150px;
   height: 90px;
 }
 .ligne_info2 {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_2.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/info_ligne_2.png");
 }
 .ligne_info3 {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_3.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/info_ligne_3.png");
 }
 .ligne_info4 {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_4_5.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/info_ligne_4_5.png");
 }
 .ligne_info5 {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_4_5.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/info_ligne_4_5.png");
   transform: rotate(180deg);
 }
 .ligne_info6 {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_6_7.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/info_ligne_6_7.png");
 }
 .ligne_info7 {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_6_7.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/info_ligne_6_7.png");
   transform: rotate(180deg);
 }
 .ligne_info8 {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_8_9.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/info_ligne_8_9.png");
 }
 .ligne_info9 {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_8_9.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/info_ligne_8_9.png");
   transform: rotateY(180deg);
 }
 .ligne_info10 {
-  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_10.png");
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/info_ligne_10.png");
   transform: rotate(180deg);
 }
 /*******************************/

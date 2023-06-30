@@ -184,10 +184,10 @@ label {
   top: 0;
   left: 0;
   transform: rotateY(-180deg);
-  background-image : url(http://localhost/portfolio/assets/img/img_blackjack/carte_bleue.png);
+  background-image : url(https://PainNagato42.github.io/Portfolio/assets/img/img_blackjack/carte_bleue.png);
 }
 .red_card {
-  background-image : url(http://localhost/portfolio/assets/img/img_blackjack/carte_rouge.png);
+  background-image : url(https://PainNagato42.github.io/Portfolio/assets/img/img_blackjack/carte_rouge.png);
 }
 input.check_none {
   display: none;
