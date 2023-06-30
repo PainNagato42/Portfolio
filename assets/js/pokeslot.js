@@ -38,15 +38,15 @@ window.addEventListener("load", () => {
         spin.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 115 + "px";
         document.querySelector(".btn_info").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 58 + "px";
     } else if (window.screen.width <= 768) {
-        if (window.screen.width <= 400 && window.screen.height <= 799) {
+        if ((window.screen.width >= 350 && window.screen.width <= 375) && (window.screen.height >= 650 && window.screen.height <= 700)) {
             document.querySelector(".contain-slot").style.height = window.screen.height / 2.45 + "px";
-            btnMoins.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 105 + "px";
-            btnPlus.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 105 + "px";
-            spin.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 125 + "px";
+            btnMoins.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 95 + "px";
+            btnPlus.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 95 + "px";
+            spin.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 115 + "px";
         } else {
-            btnMoins.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 115 + "px";
-            btnPlus.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 115 + "px";
-            spin.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 135 + "px";
+            btnMoins.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 100 + "px";
+            btnPlus.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 100 + "px";
+            spin.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 120 + "px";
         }
         document.querySelector(".balance").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 42 + "px";
         document.querySelector(".win").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 42 + "px";
