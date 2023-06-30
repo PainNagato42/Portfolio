@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost/portfolio/assets/css/global.css">
+    <link rel="stylesheet" href="http://localhost/portfolio/assets/css/blackjack.css">
+    <link rel="stylesheet" href="http://localhost/portfolio/assets/css/mediaqueries.css">
+    <title>Blackjack</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="http://localhost/portfolio/">Retour</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="flex">
+            <p class="money">1000000</p>
+        </div>
+        <div id="choix_table" class="flex flex_column justify_center align_center">
+            <div class="btn btn_table large_30 medium_50">Table Verte (Mises basses)</div>
+            <div class="btn btn_table table_bleue large_30 medium_50">Table Bleue (Mises moyennes)</div>
+            <div class="btn btn_table table_violette large_30 medium_50">Table Violette (Mises hautes)</div>
+            <div class="btn btn_table table_gold large_30 medium_50">Table Gold (Mises extrêmes)</div>
+        </div>
+        <div class="container">
+            <div class="table medium_90 small_90">
+                <div class="center bank">
+                    <div>
+                        <p id="sommeBank" class="somme-card"></p>
+                    </div>
+                    <div id="contain-card-bank" class="contain-card flex">
+                    </div>
+                </div>
+                <div id="player" class="center flex">
+                    <div id="split_1" class="relative">
+                        <div id="miseOk" class="none">
+                            <p></p>
+                        </div>
+                        <div>
+                            <p id="sommePlayer" class="somme-card"></p>
+                        </div>
+                        <div id="contain-card-player" class="contain-card flex"></div>
+                    </div>
+                    <div id="split_2" class="relative">
+                        <div id="miseOkSplit" class="none">
+                            <p></p>
+                        </div>
+                        <div>
+                            <p id="sommePlayerSplit" class="somme-card"></p>
+                        </div>
+                        <div id="contain-card-split" class="contain-card flex"></div>
+                    </div>
+
+                </div>
+                <div class="container contain-choix width_100">
+                    <div id="mises" class="contain-btn flex justify_center">
+                        <div class="mise btn large_15">50</div>
+                        <div class="mise btn large_15">100</div>
+                        <div class="mise btn large_15">500</div>
+                        <div class="mise btn large_15">1000</div>
+                    </div>
+                    <div id="actions" class="contain-btn flex justify_center none">
+                        <div class="btn action large_15">Tirer</div>
+                        <div class="btn action large_15">Refuser</div>
+                        <div class="btn action large_15">Doubler</div>
+                        <div class="btn action large_15">Séparer</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="btn_choix_tables" class="btn large_15">Tables</div>
+        <div class="mask"></div>
+        <div class="popup_rejouer absolute">
+            <p class="text_center">Vous n'avez plus assez de jetons.</p>
+            <a href="http://localhost/portfolio/projet/blackjack.html" class="btn grid large_30">Rejouer</a>
+        </div>
+    </main>
+</body>
+<script src="http://localhost/portfolio/assets/js/blackjack.js" defer></script>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost/portfolio/assets/css/global.css">
+    <link rel="stylesheet" href="http://localhost/portfolio/assets/css/morpion.css">
+    <title>Morpion rotation</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="http://localhost/portfolio/">Retour</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="text_center">Le morpion rotation</h1>
+        <h2 class="text_center margin_top_50">Joueur : <span id="current_player">1</span></h2>
+        <div class="game container small_50">
+            <div class="contain_case flex justify_center margin_top_100">
+                <div>
+                    <div class="case"></div>
+                    <div class="case"></div>
+                    <div class="case"></div>
+                </div>
+                <div>
+                    <div class="case"></div>
+                    <div class="case"></div>
+                    <div class="case"></div>
+                </div>
+                <div>
+                    <div class="case"></div>
+                    <div class="case"></div>
+                    <div class="case"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mask"></div>
+        <div class="popup victoire small_80">
+            <p id="text" class="text_center">Le joueur <span id="result"></span> a gagné</p>
+            <div class="margin_top_10 flex justify_center"><a class="rejouer" href="http://localhost/portfolio/projet/morpion_rotation.html">Rejouez</a>
+            </div>
+        </div>
+    </main>
+    <script src="http://localhost/portfolio/assets/js/morpion.js"></script>
+</body>
+
+</html>

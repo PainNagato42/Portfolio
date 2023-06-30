@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost/portfolio/assets/css/global.css">
+    <link rel="stylesheet" href="http://localhost/portfolio/assets/css/le_trouve_nombre.css">
+    <link rel="stylesheet" href="http://localhost/portfolio/assets/css/mediaqueries.css">
+    <title>Le trouve nombre</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="http://localhost/portfolio/">Retour</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Le trouve nombre</h1>
+        <div class="container margin_top_65 small_margin_20">
+            <div class="flex">
+                <div class="game relative large_80 small_100 small_order_2">
+                    <div class="info flex align_center justify_center">?</div>
+                    <div class="vies flex small_no_wrap small_100">
+                        <div class="vie"></div>
+                        <div class="vie"></div>
+                        <div class="vie"></div>
+                        <div class="vie"></div>
+                        <div class="vie"></div>
+                        <div class="vie"></div>
+                    </div>
+                    <div class="flex justify_center relative">
+                        <p class="large_15 small_30 small_margin_top_8" id="number"></p>
+                        <div class="valider flex align_center justify_center">Valider</div>
+                        <span class="large_30" id="responce"></span>
+                    </div>
+                    <div class="flex large_70 margin_auto margin_top_50 justify_center small_100 small_margin_top_20">
+                        <div class="large_30 medium_30 small_30">
+                            <div data-number="1" class="btn btn_number flex align_center justify_center">1</div>
+                        </div>
+                        <div class="large_30 medium_30 small_30">
+                            <div data-number="2" class="btn btn_number flex align_center justify_center">2</div>
+                        </div>
+                        <div class="large_30 medium_30 small_30">
+                            <div data-number="3" class="btn btn_number flex align_center justify_center">3</div>
+                        </div>
+                        <div class="large_30 medium_30 small_30">
+                            <div data-number="4" class="btn btn_number flex align_center justify_center">4</div>
+                        </div>
+                        <div class="large_30 medium_30 small_30">
+                            <div data-number="5" class="btn btn_number flex align_center justify_center">5</div>
+                        </div>
+                        <div class="large_30 medium_30 small_30">
+                            <div data-number="6" class="btn btn_number flex align_center justify_center">6</div>
+                        </div>
+                        <div class="large_30 medium_30 small_30">
+                            <div data-number="7" class="btn btn_number flex align_center justify_center">7</div>
+                        </div>
+                        <div class="large_30 medium_30 small_30">
+                            <div data-number="8" class="btn btn_number flex align_center justify_center">8</div>
+                        </div>
+                        <div class="large_30 medium_30 small_30">
+                            <div data-number="9" class="btn btn_number flex align_center justify_center">9</div>
+                        </div>
+                        <div class="large_30 medium_30 small_30">
+                            <div data-number="0" class="btn btn_number flex align_center justify_center">0</div>
+                        </div>
+                    </div>
+                    <div class="flex justify_center">
+                        <div class="retour flex align_center justify_center">Retour</div>
+                        <div class="suppr flex align_center justify_center">Suppr.</div>
+                        <div class="coeur flex align_center justify_center none"></div>
+                    </div>
+
+                </div>
+                <div class="historique large_20 small_100 small_order_1 small_flex">
+                    <h3>Historique</h3>
+                </div>
+
+            </div>
+            <div class="mask"></div>
+            <div class="popup popup_info relative medium_90medium_30 medium_80 small_90">
+                <div id="cross">X</div>
+                <p class="text_center">Le trouve nombre</p><br>
+                <p>Trouvez le nombre compris entre 1 et 100.</p><br>
+                <p><span>Joker coeur :</span> le bouton coeur apparaît au bout du 3ème coeur perdu. <br> Utilisable une seule fois, vous avez 1 chance sur 5 de gagner une vie, sinon vous perdez une vie.</p>
+            </div>
+            <div class="popup victoire small_90">
+                <p><span class="bravo"></span><br><span>BRAVO !</span> le nombre à trouver était <span
+                        id="resultV"></span>.
+                </p>
+                <div class="margin_top_10 flex justify_center"><a class="rejouer flex align_center justify_center"
+                        href="http://localhost/portfolio/projet/le_trouve_nombre.html">Rejouez</a></div>
+            </div>
+            <div class="popup defaite small_90">
+                <p><span class="fail"></span><br><span>Dommage !</span> le nombre à trouver était <span
+                        id="resultD"></span>.
+                </p>
+                <div class="margin_top_10 flex justify_center"><a class="rejouer flex align_center justify_center"
+                        href="http://localhost/portfolio/projet/le_trouve_nombre.html">Rejouez</a></div>
+            </div>
+    </main>
+    <script src="http://localhost/portfolio/assets/js/le_trouve_nombre.js" defer></script>
+</body>
+
+</html>

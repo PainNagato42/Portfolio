@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #111;
+}
+.gain {
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  padding: 12px;
+  margin-top: 20px;
+  cursor: default;
+}
+.box {
+  text-align: center;
+  font-size: 50px;
+  background-color: rgb(123, 182, 237);
+  padding: 12px;
+  cursor: pointer;
+}
+.box:not(.desactivate_box, .active, .active_echange):hover {
+  transform: scale(1.2);
+}
+.message {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.message span {
+  font-weight: bolder;
+}
+.active {
+  background-color: rgb(57, 177, 20);
+  cursor: default;
+}
+.active_echange {
+  background-color: orange;
+  cursor: default;
+}
+.desactivate_box {
+  background-color: rgba(154, 154, 154, 0.206);
+  color: rgba(17, 17, 17, 0.205);
+  cursor: default;
+}
+.desactivate_gain {
+  background-color: rgba(6, 6, 6, 0.453) !important;
+  box-shadow: 0px 5px rgba(6, 6, 6, 0.623) !important;
+}
+
+/*****************************/
+/*      MISE EN FORME       */
+/****************************/
+.container {
+  max-width: 1780px;
+}
+.large_20 {
+  width: 21%;
+}
+/*******************************/
+/*            COLOR           */
+/******************************/
+.red {
+  background-color: rgb(249, 76, 76);
+  box-shadow: 0px 5px rgb(218, 43, 43);
+}
+.orange {
+  background-color: rgb(218, 111, 3);
+  box-shadow: 0px 5px rgb(174, 91, 9);
+}
+.gold {
+  background-color: rgb(206, 176, 9);
+  box-shadow: 0px 5px rgb(172, 147, 5);
+}
+
+/******************************************/
+/*                 POPUP                 */
+/*****************************************/
+.popup,
+.popup_banquier,
+.popup_offre_accepter {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  width: 550px;
+  height: 350px;
+  top: 350px;
+  left: 700px;
+  background-color: rgb(123, 182, 237);
+  padding: 8px;
+  font-size: 73px;
+  z-index: 99;
+}
+.popup_banquier, .popup_offre_accepter {
+  background-color: rgb(206, 176, 9);
+}
+.popup_banquier h3 {
+  font-size: 50px;
+}
+.btn {
+  font-size: 35px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.btn_accepter_offre, .btn_accepter_echange, .rejouer {
+  background-color: rgb(42, 155, 42);
+}
+.btn_accepter_offre:hover, .btn_accepter_echange:hover, .rejouer:hover {
+  background-color: rgb(105, 224, 105);
+}
+.btn_refuser {
+  background-color: rgb(182, 70, 70);
+}
+.btn_refuser:hover {
+  background-color: rgb(223, 126, 126);
+}
+.absolute_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rejouer {
+  display: none;
+  font-size: 35px;
+}
+.text_box {
+  font-size: 40px;
+  margin-top: -85px;
+}
+#text_offre_accepter {
+  font-size: 45px;
+}
+.btn_plaisir {
+  font-size: 30px;
+  background-color: rgb(123, 182, 237);
+  margin-right: 30px;
+}
+.btn_plaisir:hover{
+  background-color: rgb(171, 209, 245);
+}
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.451);
+  z-index: 98;
+}
+
+/*********************************************/
+/*              ANIMATION                   */
+/********************************************/
+.anim_top {
+  animation: top 1.8s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes top {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: -50%;
+  }
+}
+.anim_scale {
+  animation: scale 0.7s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/***************************************/
+/* MEDIAQUERIES */
+@media (min-width: 769px) and (max-width: 1180px) {
+  .message {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    font-size: 20px;
+    width: 100%;
+  }
+  .medium_top_40 {
+    margin-top: 40px;
+  }
+  .gain {
+    font-size: 24px;
+    padding: 5px;
+  }
+  .box {
+    font-size: 43px;
+    padding: 8px;
+  }
+  .text_box {
+    font-size: 36px;
+  }
+  .text_25 {
+    font-size: 25px;
+  }
+  .popup, .popup_banquier, .popup_offre_accepter {
+    top: 250px;
+    left: 20%;
+    width: 60%;
+    font-size: 60px;
+  }
+  .btn_plaisir {
+    margin-right: 0;
+  }
+  .popup_offre_accepter .rejouer {
+    margin: 10px auto;
+  }
+}
+@media (max-width: 768px) {
+  .message {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    font-size: 13px;
+    width: 100%;
+  }
+  .gain {
+    font-size: 21px;
+    padding: 4px;
+  }
+  .box {
+    font-size: 30px;
+    padding: 5px;
+  }
+  .text_box {
+    font-size: 18px;
+    margin-top: -40px;
+  }
+  .text_15 {
+    font-size: 15px;
+  }
+  .popup, .popup_banquier, .popup_offre_accepter {
+    top: 250px;
+    left: 10%;
+    width: 80%;
+    height: 250px;
+    font-size: 33px;
+  }
+  .popup_offre_accepter {
+    height: 185px;
+  }
+  .popup_banquier {
+    height: 145px;
+  }
+  .popup_banquier h3, .popup_banquier p, .popup_offre_accepter p{
+    font-size: 20px !important;
+  }
+  .btn {
+    font-size: 20px;
+  }
+  .btn_plaisir {
+    font-size: 16px;
+    margin-right: 0;
+  }
+  .popup_offre_accepter .rejouer {
+    margin: 10px auto;
+  }
+  @keyframes scale {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .small_bottom_20 {
+    margin-bottom: 20px;
+  }
+  .small_bottom_30 {
+    margin-bottom: 30px;
+  }
+  .small_top_50 {
+    margin-top: 50px;
+  }
+  .small_top_40 {
+    margin-top: 40px;
+  }
+  .small_top_15 {
+    margin-top: 15px;
+  }
+  .small_top_10 {
+    margin-top: 10px;
+  }
+  .small_width_90px {
+    width: 90px;
+  }
+}

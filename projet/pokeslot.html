@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost/portfolio/assets/css/global.css">
+    <link rel="stylesheet" href="http://localhost/portfolio/assets/css/pokeslot.css">
+    <link rel="stylesheet" href="http://localhost/portfolio/assets/css/mediaqueries.css">
+    <script src="http://localhost/portfolio/assets/js/pokeslot.js" defer></script>
+    <title>PokeSlot</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="http://localhost/portfolio/">Retour</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="logo absolute"><img class="medium_60 small_80"
+                src="http://localhost/portfolio/assets/img/img_pokeslot/pok_logo.png" alt="">
+        </div>
+        <div class="container">
+            <div class="absolute contain-slot small_80">
+                <div class="contain-col flex relative">
+                    <div class="colonne flex flex_column_reverse col-1 width_20"></div>
+                    <div class="colonne flex flex_column_reverse col-2 width_20"></div>
+                    <div class="colonne flex flex_column_reverse col-3 width_20"></div>
+                    <div class="colonne flex flex_column_reverse col-4 width_20"></div>
+                    <div class="colonne flex flex_column_reverse col-5 width_20"></div>
+                    <div class="balance absolute">
+                        <p>Balance:</p>
+                        <p><span id="total_balance">100000</span>€</p>
+                    </div>
+                    <div class="bet absolute width_100">
+                        <div class="align_center">
+                            <p>Bet: <span id="price_bet">10</span>€</p>
+                        </div>
+                    </div>
+                    <div class="win absolute none">
+                        <p>Win:</p>
+                        <p class="absolute"></p>
+                    </div>
+                    <div class="btn btn-spin absolute" id="spin"></div>
+                    <div class="btn btn_moins absolute" id="moins"></div>
+                    <div class="btn btn_plus absolute" id="plus"></div>
+                    <div class="btn btn_info absolute small_10"></div>
+                    <div class="absolute line line1 none"><img
+                            src="http://localhost/portfolio/assets/img/img_pokeslot/line1_2_3.png" alt=""
+                            class="width_100">
+                    </div>
+                    <div class="absolute line line2 none"><img
+                            src="http://localhost/portfolio/assets/img/img_pokeslot/line1_2_3.png" alt=""
+                            class="width_100">
+                    </div>
+                    <div class="absolute line line3 none"><img
+                            src="http://localhost/portfolio/assets/img/img_pokeslot/line1_2_3.png" alt=""
+                            class="width_100">
+                    </div>
+                    <div class="absolute line line4 none"><img
+                            src="http://localhost/portfolio/assets/img/img_pokeslot/line4_5.png" alt=""
+                            class="width_100">
+                    </div>
+                    <div class="absolute line line5 none"><img
+                            src="http://localhost/portfolio/assets/img/img_pokeslot/line4_5.png" alt=""
+                            class="width_100">
+                    </div>
+                    <div class="absolute line line6 none"><img
+                            src="http://localhost/portfolio/assets/img/img_pokeslot/line6_7.png" alt=""
+                            class="width_100">
+                    </div>
+                    <div class="absolute line line7 none"><img
+                            src="http://localhost/portfolio/assets/img/img_pokeslot/line6_7.png" alt=""
+                            class="width_100">
+                    </div>
+                    <div class="absolute line line8 none"><img
+                            src="http://localhost/portfolio/assets/img/img_pokeslot/line8_9.png" alt=""
+                            class="width_100">
+                    </div>
+                    <div class="absolute line line9 none"><img
+                            src="http://localhost/portfolio/assets/img/img_pokeslot/line8_9.png" alt=""
+                            class="width_100">
+                    </div>
+                    <div class="absolute line line10 none"><img
+                            src="http://localhost/portfolio/assets/img/img_pokeslot/line10.png" alt=""
+                            class="width_100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mask"></div>
+        <div class="popup_info absolute large_60 medium_90">
+            <div class="btn cross absolute"></div>
+            <div class="flex justify_center justify_around">
+                <div class="small_20">
+                    <div class="img_info"></div>
+                    <div>
+                        <p>x5 = 100</p>
+                        <p>x4 = 25</p>
+                        <p>x3 = 5</p>
+                    </div>
+                </div>
+                <div class="small_20">
+                    <div class="img_info img_j"></div>
+                    <div>
+                        <p>x5 = 100</p>
+                        <p>x4 = 25</p>
+                        <p>x3 = 5</p>
+                    </div>
+                </div>
+                <div class="small_20">
+                    <div class="img_info img_q"></div>
+                    <div>
+                        <p>x5 = 100</p>
+                        <p>x4 = 25</p>
+                        <p>x3 = 5</p>
+                    </div>
+                </div>
+                <div class="small_20">
+                    <div class="img_info img_k"></div>
+                    <div>
+                        <p>x5 = 150</p>
+                        <p>x4 = 40</p>
+                        <p>x3 = 5</p>
+                    </div>
+                </div>
+                <div class="small_20">
+                    <div class="img_info img_a"></div>
+                    <div>
+                        <p>x5 = 150</p>
+                        <p>x4 = 40</p>
+                        <p>x3 = 5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify_center justify_around margin_top_50 small_margin_top_10">
+                <div class="small_20">
+                    <div class="img_info img_S4"></div>
+                    <div>
+                        <p>x5 = 750</p>
+                        <p>x4 = 100</p>
+                        <p>x3 = 30</p>
+                        <p>x2 = 5</p>
+                    </div>
+                </div>
+                <div class="small_20">
+                    <div class="img_info img_S3"></div>
+                    <div>
+                        <p>x5 = 750</p>
+                        <p>x4 = 100</p>
+                        <p>x3 = 30</p>
+                        <p>x2 = 5</p>
+                    </div>
+                </div>
+                <div class="small_20">
+                    <div class="img_info img_S2"></div>
+                    <div>
+                        <p>x5 = 2000</p>
+                        <p>x4 = 1000</p>
+                        <p>x3 = 100</p>
+                        <p>x3 = 10</p>
+                    </div>
+                </div>
+                <div class="small_20">
+                    <div class="img_info img_S1"></div>
+                    <div>
+                        <p>x5 = 5000</p>
+                        <p>x4 = 1000</p>
+                        <p>x3 = 100</p>
+                        <p>x3 = 10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify_center justify_around contain_ligne_info margin_top_50 small_margin_top_10">
+                <div class="flex align_center relative small_20">
+                    <p>1</p>
+                    <div class="ligne_info"></div>
+                </div>
+                <div class="flex align_center relative small_20">
+                    <p>2</p>
+                    <div class="ligne_info ligne_info2"></div>
+                </div>
+                <div class="flex align_center relative small_20">
+                    <p>3</p>
+                    <div class="ligne_info ligne_info3"></div>
+                </div>
+                <div class="flex align_center relative small_20">
+                    <p>4</p>
+                    <div class="ligne_info ligne_info4"></div>
+                </div>
+                <div class="flex align_center relative small_20">
+                    <p>5</p>
+                    <div class="ligne_info ligne_info5"></div>
+                </div>
+            </div>
+            <div class="flex justify_center justify_around contain_ligne_info margin_top_20 small_margin_top_10">
+                <div class="flex align_center relative small_20">
+                    <p>6</p>
+                    <div class="ligne_info ligne_info6"></div>
+                </div>
+                <div class="flex align_center relative small_20">
+                    <p>7</p>
+                    <div class="ligne_info ligne_info7"></div>
+                </div>
+                <div class="flex align_center relative small_20">
+                    <p>8</p>
+                    <div class="ligne_info ligne_info8"></div>
+                </div>
+                <div class="flex align_center relative small_20">
+                    <p>9</p>
+                    <div class="ligne_info ligne_info9"></div>
+                </div>
+                <div class="flex align_center relative small_20">
+                    <p>10</p>
+                    <div class="ligne_info ligne_info10"></div>
+                </div>
+            </div>
+        </div>
+        <div class="popup_rejouer absolute">
+            <p>Votre balance est vide</p>
+            <a class="large_50" href="http://localhost/portfolio/projet/pokeslot.html">Rejouer</a>
+        </div>
+    </main>
+</body>
+
+</html>

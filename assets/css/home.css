@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --theme-Color-1 : rgb(107, 225, 107);
+  --font-principal : 'Shojumaru', cursive;
+  --font-secondaire : 'Kurale', serif;
+}
+body {
+  background-color: #222;
+}
+header,
+.contain_presentation span,
+.contain_savoir_etre p,
+.contain_interet p,
+.contain_formation a,
+.contain_formation span,
+.contain_contact a {
+  color: var(--theme-Color-1);
+}
+header {
+  font-family: var(--font-principal);
+}
+header {
+  font-size: 40px;
+}
+li {
+  list-style: none;
+}
+ul li:nth-child(1) {
+  margin-right: 100px;
+}
+li div {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+.contain_presentation,
+.contain_description,
+.contain_contact,
+.contain_game {
+  font-family: var(--font-secondaire);
+  border: 1px solid var(--theme-Color-1);
+  box-shadow: 5px 5px 5px var(--theme-Color-1);
+  color: #f1f1f1;
+}
+.contain_animation {
+  font-family: initial;
+}
+.contain_presentation {
+  margin-top: 45px;
+}
+.contain_presentation,
+.contain_contact {
+  padding: 12px;
+}
+.contain_presentation h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.contain_contact a,
+.contain_presentation p {
+  font-size: 1.3rem;
+}
+.contain_presentation span {
+  font-weight: bolder;
+}
+.contain_description {
+  height: 312px;
+  margin-left: 655px;
+}
+.contain_description div.onglets div {
+  font-size: 0.89rem;
+  padding: 14px;
+  border-bottom: 1px solid var(--theme-Color-1);
+  cursor: pointer;
+}
+.contain_description
+  div.onglets
+  div:not(.contain_description div.onglets div:last-child) {
+  border-right: 1px solid var(--theme-Color-1);
+}
+.contain_savoir_etre,
+.contain_interet,
+.contain_formation {
+  font-size: 1.4rem;
+}
+.contain_savoir_etre p,
+.contain_interet p {
+  line-height: 50px;
+  font-weight: bolder;
+}
+.contain_savoir_etre {
+  margin-top: 15px;
+}
+.contain_outils {
+  margin-top: 70px;
+}
+.contain_interet {
+  margin-top: 40px;
+}
+.contain_formation {
+  position: relative;
+  z-index: 10;
+}
+.contain_formation a {
+  display: inline-block;
+  text-decoration: underline;
+  margin-top: 60px;
+}
+.contain_animation,
+.contain_animation_accueil {
+  color: rgb(36, 255, 36);
+  text-shadow: 10px 5px 5px var(--theme-Color-1);
+}
+.contain_animation {
+  top: 46px;
+  left: 0;
+  width: 100%;
+  height: 265px;
+  font-size: 60px;
+}
+.contain_animation_accueil {
+  font-size: 120px;
+  top: 69px;
+  left: 4%;
+  width: 100%;
+}
+.anim_opacity {
+  animation: opacity 1.1s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.contain_contact a {
+  text-decoration: underline;
+}
+.contain_contact {
+  max-width: 350px;
+}
+.contain_game {
+  position: relative;
+  overflow: hidden;
+  padding: 8px 12px;
+}
+.contain_game::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(141, 253, 141);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  transform: translateX(318px);
+}
+.contain_game:hover::after {
+  animation: translate 0.4s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.contain_game:hover {
+  animation: fontColor 0.4s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes translate {
+  0% {
+    transform: translateX(318px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes fontColor {
+  0% {
+    color: #f1f1f1;
+  }
+  100% {
+    color: #111;
+  }
+}
+.active_header {
+  border-bottom: 3px dotted var(--theme-Color-1);
+}
+.active {
+  background-color: var(--theme-Color-1);
+  color: #222;
+}
+/***********************************/
+/* LOGO */
+.logo_github {
+  margin: 0 10px;
+}
+/*****************************************/
+/* MARGIN/PADDING */
+.margin-top-5 {
+  margin-top: 5%;
+}
+.margin-bottom-5 {
+  margin-bottom: 5%;
+}
+.margin-contain-game {
+  margin: 2% 4.1%;
+}
+.padding_12 {
+  padding: 12px;
+}
+.margin_right_45 {
+  margin-right: 45px;
+}
+/*****************************************/
+/* Width */
+.large_8 {
+  width: 8%;
+}
+/***************************************/
+/* MEDIAQUERIES */
+@media (min-width: 760px) and (max-width: 1180px) {
+  header {
+    font-size: 30px;
+    padding: 12px;
+  }
+  a {
+    font-size: 1.1rem;
+  }
+  .contain_presentation,
+  .contain_description,
+  .contain_contact {
+    margin: 30px auto;
+  }
+  .contain_description div.onglets div {
+    font-size: 0.8rem;
+  }
+  .contain_animation {
+    height: 264px;
+    font-size: 50px;
+  }
+  .contain_animation_accueil {
+    font-size: 80px;
+  }
+  .contain_outils {
+    margin-top: 80px;
+  }
+  .contain_formation a {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 759px) {
+  header {
+    font-size: 20px;
+    padding: 12px;
+  }
+  .contain_presentation,
+  .contain_description,
+  .contain_contact {
+    margin: 30px auto;
+  }
+  .contain_presentation h2 {
+    font-size: 1.8rem;
+  }
+  .contain_presentation p {
+    font-size: 1rem;
+  }
+  a {
+    font-size: 1.2rem;
+  }
+  .contain_description div.onglets div {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+  .contain_description div.onglets div:nth-child(4) {
+    font-size: 0.5rem;
+  }
+  .contain_description {
+    height: 255px;
+  }
+  .contain_connaissances {
+    margin-left: 10px;
+  }
+  .contain_savoir_etre, .contain_outils {
+    padding: 6px;
+    margin-top: 0;
+  }
+  .contain_outils {
+    margin-left: 5px;
+    padding-left: 15px;
+  }
+  .contain_interet {
+    margin-top: 20px;
+  }
+  .contain_formation {
+    margin-top: -12px;
+    padding: 0;
+  }
+  .contain_formation a {
+    font-size: 2rem;
+  }
+  .contain_animation {
+    top: 37px;
+    height: 217px;
+    font-size: 40px;
+  }
+  .contain_animation_accueil {
+    top: 51px;
+    font-size: 60px;
+  }
+  .php,
+  .symfony,
+  .java,
+  .javascript,
+  .json,
+  .ajax,
+  .sql,
+  .symfony,
+  .json,
+  .html,
+  .css,
+  .vscode,
+  .composer,
+  .git,
+  .mysql,
+  .fzilla {
+    height: 60px;
+    margin-right: 23px;
+    width: 43px;
+    background-size: 100%;
+  }
+  .vscode,
+  .composer,
+  .git,
+  .mysql,
+  .fzilla {
+    width: 73px;
+  }
+  .java,
+  .javascript,
+  .vscode,
+  .composer,
+  .git,
+  .mysql,
+  .fzilla {
+    background-size: auto;
+  }
+  .contain_connaissances {
+    font-size: 0.8rem;
+  }
+  .margin-contain-game {
+    margin: 10px auto;
+  }
+  .small_margin_right_22 {
+    margin-right: 22px;
+  }
+  .small_top_10 {
+    margin-top: 10px;
+  }
+  .small_top_0 {
+    margin-top: 0;
+  }
+}

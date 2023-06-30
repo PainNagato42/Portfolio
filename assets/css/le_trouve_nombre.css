@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+a {
+    text-decoration: none;
+    color:#111;
+}
+.game, .historique {
+    border: 2px solid rgb(78, 78, 147);
+    padding: 50px;
+    border-radius: 25px;
+    background-color: rgba(198, 230, 255, 0.343)
+}
+h3, .historique p {
+    font-size: 30px;
+    line-height: 50px;
+}
+h3 {
+    text-decoration: underline;
+}
+#number {
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 1px dotted #111;
+    margin-top: 3%;
+}
+#responce {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    font-size: 50px;
+}
+.vie {
+    background-image: url(http://localhost/portfolio/assets/img/img_find_number/coeur.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+}
+.anim_vie {
+    animation: vie 0.5s infinite linear;
+}
+@keyframes vie {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+.plus, .moins, .bravo {
+    background-image: url(http://localhost/portfolio/assets/img/img_find_number/signe_plus.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.moins {
+    background-image: url(http://localhost/portfolio/assets/img/img_find_number/signe_moins.png);
+}
+.mini_plus, .mini_moins {
+    background-image: url(http://localhost/portfolio/assets/img/img_find_number/mini_plus.png);
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    background-position: 3px 14px;
+}
+.mini_moins {
+    background-image: url(http://localhost/portfolio/assets/img/img_find_number/mini_moins.png);
+}
+.bravo, .fail {
+    margin: 0 auto;
+}
+.bravo {
+    color: transparent;
+    background-image: url(http://localhost/portfolio/assets/img/img_find_number/signe_valider.png);
+    display: block;
+}
+.fail {
+    background-image: url(http://localhost/portfolio/assets/img/img_find_number/fail.png);
+    background-repeat: no-repeat;
+    width: 53px;
+    height: 50px;
+    color: transparent;
+    display: block;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    z-index: 99;
+}
+.popup p {
+    font-size: 50px;
+}
+.popup_info p:nth-child(2){
+    text-decoration: underline;
+}
+.popup_info span {
+    font-weight: bolder;
+}
+#cross {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: 30px;
+    cursor: pointer;
+}
+.victoire span:nth-child(3) {
+    color: green
+}
+.defaite p {
+    font-size: 45px;
+}
+.defaite span:nth-child(3) {
+    color: red
+}
+.mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(0, 0, 0, 0.451);
+    z-index: 98;
+}
+/***************************************/
+/* MARGIN/PADDING */
+.margin_top_65 {
+    margin-top: 65px;
+}
+/**************************************/
+/* BTN */
+.btn, .valider, .retour, .suppr, .rejouer, .coeur, .info {
+    position: relative;
+    background-color: rgb(125, 199, 255);
+    border-radius: 5px;
+    margin: 15px;
+    width: 125px;
+    height: 60px;
+    font-size: 30px;
+    box-shadow: 0 8px rgb(71, 145, 201);
+    cursor: pointer;
+}
+.btn:hover, .rejouer:hover {
+    background-color: rgb(178, 222, 255);
+    box-shadow: 0 5px rgb(71, 145, 201);
+    top: 2px;
+}
+.btn:active, .rejouer:active {
+    box-shadow: 0 0px rgb(71, 145, 201);
+    top: 4px;
+}
+.valider {
+    background-color: rgb(109, 224, 109);
+    box-shadow: 0 8px rgb(57, 169, 57);
+}
+.valider:hover {
+    background-color: rgb(179, 246, 179);
+    box-shadow: 0 5px rgb(57, 169, 57);
+    top: 2px;
+}
+.valider:active {
+    box-shadow: 0 0px rgb(57, 169, 57);
+    top: 4px;
+}
+.retour{
+    background-color: rgb(172, 172, 172);
+    box-shadow: 0 8px rgb(104, 104, 104);
+}
+.retour:hover {
+    background-color: rgb(209, 209, 209);
+    box-shadow: 0 5px rgb(104, 104, 104);
+    top: 2px;
+}
+.retour:active {
+    box-shadow: 0 0px rgb(57, 169, 57);
+    top: 4px;
+}
+.suppr{
+    background-color: rgb(227, 103, 103);
+    box-shadow: 0 8px rgb(180, 74, 74);
+}
+.suppr:hover {
+    background-color: rgb(253, 144, 144);
+    box-shadow: 0 5px rgb(180, 74, 74);
+    top: 2px;
+}
+.suppr:active {
+    box-shadow: 0 0px rgb(180, 74, 74);
+    top: 4px;
+}
+.info{
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    width: initial;
+    height: initial;
+    padding: 8px 15px;
+    background-color: rgb(249, 170, 80);
+    box-shadow: 0 8px rgb(219, 136, 40);
+}
+.info:hover {
+    background-color: rgb(255, 205, 148);
+    box-shadow: 0 5px rgb(219, 136, 40);
+    top: 2.5%;
+}
+.info:active {
+    box-shadow: 0 0px rgb(180, 74, 74);
+    top: 3%;
+}
+.coeur {
+    background-image: url(http://localhost/portfolio/assets/img/img_find_number/btn_coeur.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(234, 234, 77);
+    box-shadow: 0 8px rgb(180, 180, 51);
+}
+.coeur:hover {
+    background-color: rgb(233, 233, 130);
+    box-shadow: 0 5px rgb(180, 180, 51);
+    top: 2px;
+}
+.coeur:active {
+    box-shadow: 0 0px rgb(180, 180, 51);
+    top: 4px;
+}
+
+/***************************************/
+/* MEDIAQUERIES */
+@media (min-width: 769px) and (max-width: 1180px) {
+    .game {
+        padding: 18px;
+    }
+    .historique {
+        padding: 25px;
+    }
+    .historique h3 {
+        font-size: 25px;
+    }
+    .popup_info, .victoire, .defaite {
+        top: 450px;
+    }
+    .margin_top_65 {
+        margin-top: 40px;
+    }
+    .btn, .valider, .retour, .suppr, .coeur {
+        width: 115px;
+        height: 54px;
+    }
+    #responce {
+        left: 18%;
+        background-size: 75%
+    }
+    .victoire p, .defaite p {
+        font-size: 39px;
+    }
+}
+
+@media (max-width: 768px) {
+h1 {
+    font-size: 30px;
+}
+.small_no_wrap {
+    flex-wrap: nowrap;
+}
+.small_margin_top_8 {
+    margin-top: 42px !important;
+}
+.btn, .valider, .retour, .suppr, .rejouer, .coeur {
+    width: 80px;
+    height: 48px;
+    font-size: 18px;
+}
+.retour, .suppr, .coeur {
+    width: 55px;
+}
+.info {
+    top: 8%;
+    right: 0;
+}
+.info:hover {
+    top: 8.5%;
+}
+.info:active {
+    top: 9%;
+}
+.btn_number {
+    width: 60px;
+    margin: 15px auto;
+}
+h3, .historique p {
+    font-size: 16px;
+}
+h3 {
+    position: absolute;
+    top: -18%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.historique, .historique div {
+    position: relative;
+}
+.historique {
+    height: 80px;
+    padding: 16px;
+}
+.mini_moins, .mini_plus {
+    position: absolute;
+    bottom: 30px;
+    left: -8px;
+    background-size: 60%;
+}
+.vies {
+    margin-top: -46px;
+}
+.vie {
+    background-image: url(http://localhost/portfolio/assets/img/img_find_number/mini_coeur.png);
+    width: 40px;
+    height: 40px;
+}
+#number {
+    font-size: 30px;
+}
+#responce {
+    left: -30px;
+}
+.plus, .moins {
+    background-size: 50%;
+}
+.game {
+    padding-bottom: 10px;
+}
+.popup p {
+    font-size: 23px;
+}
+}

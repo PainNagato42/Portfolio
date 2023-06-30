@@ -1,0 +1,501 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/****************************************************************/
+/* MISE EN PAGE */
+body {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_backgroud.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+}
+.logo {
+  top: 10%;
+  left: 3%;
+}
+.contain-slot {
+  width: 714px;
+  height: 617px;
+  top: 258px;
+  left: 31.5%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.contain-col {
+  position: absolute;
+  width: 100%;
+  background-color: #4c4d59;
+}
+.symbole {
+  font-size: 94px;
+  margin: 8px 0;
+}
+.balance, .bet,
+.win {
+  font-size: 30px;
+}
+.balance {
+  left: 4%;
+}
+.bet {
+  left: 44%;
+}
+.win {
+  right: 15%;
+}
+#moins,
+#plus {
+  left: 33%;
+}
+#plus {
+  left: 60%;
+}
+.line1,
+.line2,
+.line3,
+.line4,
+.line5,
+.line6,
+.line7,
+.line8,
+.line9,
+.line10 {
+  width: 90%;
+  left: 43px;
+}
+.line5,
+.line7 {
+  transform: rotate(-180deg);
+}
+.line1 {
+  top: 191px;
+}
+.line2 {
+  top: 44px;
+}
+.line3 {
+  top: 335px;
+}
+.line4 {
+  top: 74px;
+}
+.line5 {
+  top: 40px;
+}
+.line6 {
+  top: -45px;
+}
+.line7 {
+  top: 139px;
+}
+.line8,
+.line9,
+.line10 {
+  top: 31px;
+}
+.line9 {
+  transform: rotateY(-180deg);
+}
+/*******************************************************/
+/* MISE EN FORME */
+.container {
+  max-width: 1450px;
+}
+.absolute_center {
+  position: absolute;
+  top: 50%;
+  left: 50.1%;
+  transform: translate(-50%, -50%);
+}
+.flow_hidden {
+  overflow: hidden;
+}
+.width_20 {
+  width: 20%;
+}
+.width_100 {
+  width: 100%;
+}
+.margin_bottom_top-2 {
+  margin: -2px 0;
+}
+/********************************************/
+/* BTN */
+
+.btn {
+  cursor: pointer;
+}
+.btn-spin,
+.btn_moins,
+.btn_plus {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.btn_moins,
+.btn_plus {
+  width: 60px;
+  height: 60px;
+}
+.btn-spin {
+  right: 50%;
+  transform: translateX(50%);
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_btn_spin.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+}
+.btn_moins {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_btn_moins.png");
+}
+.btn_plus {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_btn_plus.png");
+}
+#moins:active,
+#plus:active {
+  transform: scale(1.2);
+}
+.btn_info {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_info.png");
+  bottom: -10%;
+  right: -13%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 999px;
+  padding: 15px;
+  width: 50px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+/********************************/
+/* POPUP */
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.451);
+  z-index: 98;
+}
+.popup_info {
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 30px;
+  font-size: 30px;
+  z-index: 99;
+}
+.cross {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_cross.png");
+  width: 47px;
+  height: 52px;
+  top: 1%;
+  right: 1%;
+}
+.popup_rejouer {
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 25px;
+  font-size: 40px;
+  z-index: 99;
+}
+.popup_rejouer a {
+  display: grid;
+  text-decoration: none;
+  background-color: rgb(47, 123, 47);
+  color: white;
+  justify-items: center;
+  margin: 15px auto;
+}
+.img_info {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_10.png");
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+}
+.img_j {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_j.png");
+}
+.img_q {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_q.png");
+}
+.img_k {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_k.png");
+}
+.img_a {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_a.png");
+}
+.img_S4 {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_joelle.png");
+}
+.img_S3 {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_pikachu.png");
+}
+.img_S2 {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_rocket.png");
+}
+.img_S1 {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/pok_sacha.png");
+}
+
+.contain_ligne_info div.flex p {
+  position: absolute;
+  top: 30%;
+  left: -10%;
+}
+.contain_ligne_info:last-child div.flex:last-child p {
+  left: -20%;
+}
+
+.ligne_info {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_1.png");
+  width: 150px;
+  height: 90px;
+}
+.ligne_info2 {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_2.png");
+}
+.ligne_info3 {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_3.png");
+}
+.ligne_info4 {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_4_5.png");
+}
+.ligne_info5 {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_4_5.png");
+  transform: rotate(180deg);
+}
+.ligne_info6 {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_6_7.png");
+}
+.ligne_info7 {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_6_7.png");
+  transform: rotate(180deg);
+}
+.ligne_info8 {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_8_9.png");
+}
+.ligne_info9 {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_8_9.png");
+  transform: rotateY(180deg);
+}
+.ligne_info10 {
+  background-image: url("http://localhost/portfolio/assets/img/img_pokeslot/info_ligne_10.png");
+  transform: rotate(180deg);
+}
+/*******************************/
+/* ANIMATION */
+
+.anim_spin {
+  animation: spin 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(6%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.anim_win {
+  animation: win 0.8s ease-in-out infinite;
+}
+
+@keyframes win {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/***************************************/
+/* MEDIAQUERIES */
+@media (min-width: 760px) and (max-width: 1180px) {
+  body {
+    background-position: center;
+    height: 797px;
+    background-color: #111
+  }
+  .logo{
+    top: 14%;
+  }
+  .contain-slot {
+    top: 240px;
+    width: 400px;
+    height: 365px;
+  }
+  .balance, .bet, .win {
+    font-size: 19px;
+  } 
+  .btn-spin {
+    width: 20%;
+    height: 76px;
+  }
+  #moins, #plus {
+    left: 26%;
+  }
+  #plus {
+    left: 61%;
+  }
+  .popup_info {
+    font-size: 20px;
+  }
+  .line1, .line2, .line3, .line4, .line5, .line6, .line7, .line8, .line9, .line10 {
+    left: 5%; 
+  }
+  .line {
+    top: 44%;
+  }
+  .line2 {
+    top: 11%;
+  }
+  .line3 {
+    top: 77%;
+  }
+  .line4 {
+    top: 16%;
+  }
+  .line5, .line9 {
+    top: 12%;
+  }
+  .line6 {
+    top: -7%;
+  }
+  .line7 {
+    top: 31%;
+  }
+  .line8 {
+    top: 10%;
+  }
+  .line10 {
+    top: 13%;
+  }
+}
+
+@media (max-width: 759px) {
+  body {
+    background-position: center;
+    height: 797px;
+    background-size: 207%;
+    background-color: #111
+  }
+  .logo {
+    top: 40px;
+    left: 16%;
+  }
+  .contain-slot {
+    height: 35%;
+    top: 279px;
+    left: 9.5%;
+  }
+  .balance, .bet,
+  .win {
+    font-size: 16px;
+  }
+  .btn-spin {
+    width: 18%;
+  }
+  #moins,
+  #plus {
+    width: 10%;
+    left: 28.5%;
+  }
+  #plus {
+    left: 62%;
+  }
+  .bet {
+    left: 40%;
+  }
+  .btn_info {
+    height: 21%;
+    right: -11%;
+  }
+  .popup_info {
+    width: 95%;
+    top: 398px;
+  }
+  .popup_info p {
+    font-size: 12px;
+  }
+  .img_info, .cross, .ligne_info {
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .img_info {
+    width: 47px;
+    height: 72px;
+    
+  }
+  .cross {
+    width: 26px;
+    height: 37px;
+
+  }
+  .ligne_info {
+    height: 40px;
+    margin-left: 10px;
+  }
+  .contain_ligne_info div.flex p {
+    left: 2%;
+  }
+  .contain_ligne_info:last-child div.flex:last-child p {
+    left: -3%;
+  }
+  .line1, .line2, .line3, .line4, .line5, .line6, .line7, .line8, .line9, .line10 {
+    left: 6%; 
+  }
+  .line {
+    top: 11%;
+  }
+  .line2 {
+    top: 45%;
+  }
+  .line3 {
+    top: 77%;
+  }
+  .line4 {
+    top: 18%;
+  }
+  .line5 {
+    top: 10%;
+  }
+  .line6 {
+    top: -9%;
+  }
+  .line7 {
+    top: 30%;
+  }
+  .line8 {
+    top: 9%;
+  }
+  .line9, .line10 {
+    top: 13%;
+  }
+  .small_margin_top_10 {
+    margin-top: 10px;
+  }
+  .small_94 {
+    width: 94%;
+  }
+}

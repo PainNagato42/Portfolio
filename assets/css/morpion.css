@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 30px;
+}
+.case {
+    border: 1px solid #111;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+.joueur1, .joueur2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(160, 160, 255);
+    color: blue;
+    font-size: 80px;
+}
+.joueur2 {
+    background-color: rgb(255, 160, 160);
+    color: red;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    z-index: 99;
+}
+.popup p {
+    font-size: 50px;
+}
+.mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(0, 0, 0, 0.451);
+    z-index: 98;
+}
+/**********************************/
+/* BTN */
+.rejouer {
+    background-color: rgb(255, 202, 104);
+    font-size: 30px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #111;
+    margin-top: 25px;
+}
+.rejouer:hover {
+    background-color: rgb(247, 225, 183)
+}
+/*********************************/
+/* MISE EN FORME */
+.index_10 {
+    z-index: 10;
+}
+/***************************************/
+/* MEDIAQUERIES */
+@media (min-width: 769px) and (max-width: 1180px) {
+    .popup {
+        top: 600px;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+    .case {
+        width: 60px;
+        height: 60px;
+    }
+    .joueur1, .joueur2 {
+        font-size: 60px;
+    }
+    .popup p, .rejouer {
+        font-size: 26px;
+    }
+    .small_50 {
+        width: 50%;
+    }
+    .small_80 {
+        width: 80%;
+    }
+}

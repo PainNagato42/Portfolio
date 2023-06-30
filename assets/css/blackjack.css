@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+.table {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  background-color: #1f5b1f;
+  width: 950px;
+  height: 654px;
+  transform: translate(-50%, -50%);
+  border-radius: 150px;
+  border: 14px solid gray;
+}
+.money,
+#miseOk,
+#miseOkSplit {
+  position: absolute;
+  font-size: 2rem;
+}
+.money, #miseOk, #miseOkSplit {
+  border: 1px solid #111;
+  color: #f7f74f;
+  background-color: #6f6f6f;
+}
+.money {
+  top: 13%;
+  left: 5%;
+  font-size: 4rem;
+  padding: 12px;
+}
+#miseOk,
+#miseOkSplit {
+  top: -105px;
+  left: 37px;
+  padding: 15px;
+  border-radius: 999px;
+}
+#choix_table {
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  background-color: #f1f1f1;
+  z-index: 10;
+}
+#btn_choix_tables {
+  position: absolute;
+  top: 7%;
+  right: 4%;
+}
+/*******************************************************/
+/* MISE EN FORME */
+.container {
+  max-width: 1450px;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.justify-around {
+  width: 40%;
+}
+.grid {
+  display: grid;
+}
+/*******************************************************/
+/* WIDTH */
+.width_100 {
+  width: 100%;
+}
+.width_10 {
+  width: 10%;
+}
+
+/*******************************************************/
+/* COLOR */
+.red {
+  color: rgb(224, 81, 81);
+}
+.black {
+  color: rgb(19, 19, 19);
+}
+.bg_perdu {
+  background-color: #ff4949 !important;
+}
+.bg_gagner {
+  background-color: #1bff1b !important;
+}
+.bg_egal {
+  background-color: rgb(248, 148, 56) !important;
+}
+.bg_BJ {
+  background-color: rgb(255, 255, 0) !important;
+}
+.btn_stop {
+  background-color: grey !important;
+  box-shadow: inset 0px 9px 5px #595959 !important;
+}
+/*******************************************************/
+/* CONTAIN CARD */
+.container_card {
+  position: relative;
+}
+.bank {
+  top: 19%;
+}
+#player {
+  top: 73%;
+}
+.border-split {
+  border: 3px solid yellow;
+  border-radius: 6px;
+}
+/*******************************************************/
+/* CARD */
+.card,
+.front,
+.back {
+  position: relative;
+  border: 1px solid gray;
+  background-color: #f1f1f1;
+  height: 180px;
+  width: 115px;
+  border-radius: 5px;
+}
+.card,
+label {
+  margin-left: -86px;
+}
+.card:first-child {
+  margin-left: 0;
+}
+.left,
+.middle,
+.right {
+  position: absolute;
+  font-size: 2rem;
+}
+.middle {
+  font-size: 4rem;
+}
+.right {
+  right: 1%;
+  bottom: 0;
+}
+.somme-card {
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: #c4d2af;
+}
+label {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.card-flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.front,
+.back {
+  backface-visibility: hidden;
+  transition: all 0.5s ease;
+}
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: rotateY(-180deg);
+  background-image : url(http://localhost/portfolio/assets/img/img_blackjack/carte_bleue.png);
+}
+.red_card {
+  background-image : url(http://localhost/portfolio/assets/img/img_blackjack/carte_rouge.png);
+}
+input.check_none {
+  display: none;
+}
+
+/*******************************************************/
+/* MARGIN / PADDING */
+.margin_bottom_200 {
+  margin-bottom: 200px;
+}
+.margin_left_20 {
+  margin-left: 20px;
+}
+/*******************************************************/
+/* BTN */
+.contain-choix {
+  position: absolute;
+  bottom: -18%;
+}
+.btn {
+  font-size: 2rem;
+  border: 2px solid gray;
+  background-color: #1f5b1f;
+  box-shadow: inset 0px 9px 5px #5cbb5c;
+  color: #f1f1f1;
+  padding: 15px;
+  margin: 0 15px;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+.btn_table {
+  margin: 40px 0 !important;
+  font-size: 1.8rem;
+  padding: 20px 12px;
+}
+.table_bleue {
+  background-color: royalblue;
+  box-shadow: inset 0px 9px 5px #60b5ff;
+}
+.table_violette {
+  background-color: #6a139b;
+  box-shadow: inset 0px 9px 5px #a449d9;
+}
+.table_gold {
+  background-color: goldenrod;
+  box-shadow: inset 0px 9px 5px rgb(245, 192, 59);
+  color: darkblue;
+}
+/********************************************/
+/* POPUP */
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.451);
+  z-index: 98;
+}
+.popup_rejouer {
+  display: none;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  padding: 8px;
+  font-size: 73px;
+  z-index: 99;
+}
+.popup_rejouer p {
+  margin: 20px 0;
+  font-size: 43px;
+}
+.popup_rejouer a {
+  margin: 30px auto;
+  background-color: #0a0c90;
+  box-shadow: inset 0px 9px 5px #383bca;
+}
+/***************************************/
+/* MEDIAQUERIES */
+@media (min-width: 769px) and (max-width: 1180px) {
+  .table {
+    top: 380px;
+    height: 530px;
+  }
+  .money {
+    top: 45px;
+    left: 2%;
+    font-size: 1.8rem;
+  }
+  #btn_choix_tables {
+    top: 45px;
+    right: 0;
+    font-size: 1.3rem;
+  }
+  .contain-choix {
+    bottom: -24%
+  }
+  .card,
+  .front,
+  .back {
+    height: 142px;
+    width: 90px;
+  }
+  .left,
+  .right {
+    font-size: 2rem;
+  }
+  .back {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .middle {
+    font-size: 3rem;
+  }
+  .card,
+  label {
+    margin-left: -70px;
+  }
+  #miseOk,
+  #miseOkSplit {
+    font-size: 1.4rem;
+    left: 6px;
+    top: -84px;
+  }
+  .somme-card {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 768px) {
+  .table {
+    height: 500px;
+  }
+  .money {
+    top: 45px;
+    left: 2%;
+    font-size: 1.2rem;
+    padding: 3px;
+  }
+  .contain-choix {
+    bottom: -30%;
+    left: 0;
+  }
+  #btn_choix_tables {
+    top: 30px;
+    right: 0;
+    width: 22%;
+  }
+  .btn {
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 8px 5px;
+  }
+  .mise,
+  .action {
+    width: 40%;
+  }
+  #player {
+    top: 74%;
+  }
+  .split_1,
+  .split_2 {
+    position: absolute;
+  }
+  .split_1 {
+    left: -34%;
+  }
+  .split_2 {
+    right: -34%;
+  }
+  .bank {
+    top: 21%;
+  }
+  .card,
+  .front,
+  .back {
+    height: 109px;
+    width: 70px;
+  }
+  .back {
+    background-size: 100%;
+  }
+  .left,
+  .right {
+    font-size: 1.3rem;
+  }
+  .middle {
+    font-size: 3rem;
+  }
+  .card,
+  label {
+    margin-left: -57px;
+  }
+  #miseOk,
+  #miseOkSplit {
+    font-size: 1.4rem;
+    left: 6px;
+    top: -88px;
+  }
+  .miseLeft24 {
+    left: 12% !important;
+  }
+  #miseOkSplit {
+    left: 60%;
+  }
+  .large_30 {
+    width: 80%;
+  }
+  .large_90 {
+    top: 60% !important;
+    width: 44%;
+  }
+  .popup_rejouer p {
+    font-size: 18px;
+  }
+  .popup_rejouer a {
+    margin: 10px auto;
+  }
+}
