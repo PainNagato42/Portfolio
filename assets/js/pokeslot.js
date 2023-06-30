@@ -1,7 +1,7 @@
 // const containSlot = document.querySelector(".contain-slot");
 const columns = document.querySelectorAll(".colonne");
 const lines = document.querySelectorAll(".line");
-const url = "http://localhost/portfolio/assets/img/img_pokeslot";
+const url = "https://painnagato42.github.io/Portfolio/assets/img/img_pokeslot";
 const tabSymbole = [url + "/pok_10.png", url + "/pok_j.png", url + "/pok_q.png", url + "/pok_k.png", url + "/pok_a.png", url + "/pok_joelle.png", url + "/pok_pikachu.png", url + "/pok_rocket.png", url + "/pok_sacha.png"];
 const spin = document.querySelector("#spin");
 let spinActive = false;
