@@ -410,7 +410,7 @@ body {
   }
   .balance, .bet,
   .win {
-    font-size: 16px;
+    font-size: 0.7rem;
   }
   .btn-spin {
     width: 18%;

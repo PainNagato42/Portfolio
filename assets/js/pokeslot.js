@@ -47,9 +47,9 @@ window.addEventListener("load", () => {
             btnPlus.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 100 + "px";
             spin.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 120 + "px";
         }
-        document.querySelector(".balance").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 42 + "px";
-        document.querySelector(".win").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 42 + "px";
-        document.querySelector(".bet").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 25 + "px";
+        document.querySelector(".balance").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 30 + "px";
+        document.querySelector(".win").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 30 + "px";
+        document.querySelector(".bet").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 18 + "px";
         document.querySelector(".btn_info").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 42 + "px";
     } else {
         document.querySelector(".balance").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 75 + "px";
