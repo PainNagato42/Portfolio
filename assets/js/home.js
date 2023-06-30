@@ -107,12 +107,12 @@ function createDivAnim(col) {
 
 function addAndDelDiv(index) {
     let animLength;
-    let columns
+    let columns;
     if (animAccueil === false) {
-        animLength = 5
+        animLength = 5;
         columns = document.querySelectorAll(".col_anim");
     } else {
-        animLength = 7
+        animLength = 7;
         columns = document.querySelectorAll(".col_anim_accueil");
     }
     if (columns[index].children.length <= animLength) {

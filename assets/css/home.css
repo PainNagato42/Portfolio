@@ -130,8 +130,9 @@ h3 {
 .contain_animation_accueil {
   font-size: 120px;
   top: 69px;
-  left: 4%;
+  left: 0;
   width: 100%;
+  height: 100vh;
 }
 .anim_opacity {
   animation: opacity 1.1s linear;

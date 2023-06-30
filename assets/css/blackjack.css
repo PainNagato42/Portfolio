@@ -324,8 +324,12 @@ input.check_none {
   }
 }
 @media (max-width: 768px) {
+  #choix_table {
+    justify-content: initial;
+  }
   .table {
-    height: 500px;
+    height: 450px;
+    top: 48%;
   }
   .money {
     top: 45px;
@@ -344,7 +348,7 @@ input.check_none {
   }
   .btn {
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     margin: 8px 5px;
   }
   .mise,

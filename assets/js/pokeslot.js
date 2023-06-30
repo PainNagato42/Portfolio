@@ -38,7 +38,8 @@ window.addEventListener("load", () => {
         spin.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 115 + "px";
         document.querySelector(".btn_info").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 58 + "px";
     } else if (window.screen.width <= 768) {
-        if (window.screen.width <= 365) {
+        if (window.screen.width <= 400 && window.screen.height <= 750) {
+            document.querySelector(".contain-slot").style.height = window.screen.height / 2.45 + "px";
             btnMoins.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 105 + "px";
             btnPlus.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 105 + "px";
             spin.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 125 + "px";
@@ -125,15 +126,6 @@ function createSymbole(col) {
     let randNumber = Math.floor(Math.random() * 100) + 1;
     let div = document.createElement("div");
     let valueSymbole = tabSymbole[symboleProbability(randNumber)];
-    // if (window.screen.height <= 926 && window.screen.height >= 855) {
-    //     div.classList.add("small_94");
-    //     div.classList.add("margin_bottom_top-2");
-    //     div.innerHTML = "<img class='small_94' src=" + valueSymbole + ">";
-    // } else {
-    //     div.classList.add("width_100");
-    //     div.classList.add("margin_bottom_top-2");
-    //     div.innerHTML = "<img class='width_100' src=" + valueSymbole + ">";
-    // }
     div.classList.add("width_100");
     div.classList.add("margin_bottom_top-2");
     div.innerHTML = "<img class='width_100' src=" + valueSymbole + ">";
