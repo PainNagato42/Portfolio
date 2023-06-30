@@ -38,7 +38,7 @@ window.addEventListener("load", () => {
         spin.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 115 + "px";
         document.querySelector(".btn_info").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 58 + "px";
     } else if (window.screen.width <= 768) {
-        if (window.screen.width <= 400 && window.screen.height <= 750) {
+        if (window.screen.width <= 450 && window.screen.height <= 750) {
             document.querySelector(".contain-slot").style.height = window.screen.height / 2.45 + "px";
             btnMoins.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 105 + "px";
             btnPlus.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 105 + "px";
