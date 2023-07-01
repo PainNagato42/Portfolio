@@ -110,7 +110,10 @@ valider.addEventListener("click", () => {
         divHist.classList.add("flex");
         divHist.classList.add("small_10");
         let hist = document.createElement("p");
-        hist.innerHTML = choix.textContent;
+        hist.textContent = choix.textContent;
+        if(hist.textContent.length < 2) {
+            hist.style.marginLeft = 4 + "px";
+        }
         let div = document.createElement("div");
         div.classList.add("mini_moins");
         zoneHist.appendChild(divHist);
@@ -126,7 +129,10 @@ valider.addEventListener("click", () => {
         divHist.classList.add("flex");
         divHist.classList.add("small_10");
         let hist = document.createElement("p");
-        hist.innerHTML = choix.textContent;
+        hist.textContent = choix.textContent;
+        if(hist.textContent.length < 2) {
+            hist.style.marginLeft = 4 + "px";
+        }
         let div = document.createElement("div");
         div.classList.add("mini_plus");
         zoneHist.appendChild(divHist)

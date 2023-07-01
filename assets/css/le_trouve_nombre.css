@@ -336,13 +336,13 @@ h3 {
     font-size: 30px;
 }
 #responce {
-    left: -30px;
+    left: 8px;
 }
 .plus, .moins {
     background-size: 50%;
 }
 .game {
-    padding-bottom: 10px;
+    padding: 50px 25px;
 }
 .popup p {
     font-size: 23px;
