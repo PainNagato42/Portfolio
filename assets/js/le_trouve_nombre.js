@@ -163,10 +163,12 @@ valider.addEventListener("click", () => {
 info.addEventListener("click", () => {
     mask.style.display = "block";
     popupInfo.style.display = "block";
+    info.style.zIndex = "0";
 })
 cross.addEventListener("click", () => {
     mask.style.display = "none";
     popupInfo.style.display = "none";
+    info.style.zIndex = "100";
 })
 /******************************************/
 /*             BTN RETOUR                */

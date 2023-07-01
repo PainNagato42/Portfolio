@@ -291,6 +291,7 @@ h1 {
 .info {
     top: 10%;
     right: 0;
+    z-index: 100;
 }
 .info:hover {
     top: 8.5%;
