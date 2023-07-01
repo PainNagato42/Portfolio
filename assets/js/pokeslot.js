@@ -38,15 +38,9 @@ window.addEventListener("load", () => {
         spin.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 115 + "px";
         document.querySelector(".btn_info").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 58 + "px";
     } else if (window.screen.width <= 768) {
-        if ((window.screen.width >= 350 && window.screen.width <= 375) && (window.screen.height >= 650 && window.screen.height <= 700)) {
-            btnMoins.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 70 + "px";
-            btnPlus.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 70 + "px";
-            spin.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 80 + "px";
-        } else {
-            btnMoins.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 100 + "px";
-            btnPlus.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 100 + "px";
-            spin.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 120 + "px";
-        }
+        btnMoins.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 70 + "px";
+        btnPlus.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 70 + "px";
+        spin.style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 80 + "px";
         document.querySelector(".balance").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 30 + "px";
         document.querySelector(".win").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 30 + "px";
         document.querySelector(".bet").style.top = document.querySelector(".contain-slot").getBoundingClientRect().height - 18 + "px";
