@@ -233,11 +233,11 @@ a {
     width: 100%;
   }
   .gain {
-    font-size: 21px;
+    font-size: 0.9rem;
     padding: 4px;
   }
   .box {
-    font-size: 30px;
+    font-size: 22px;
     padding: 5px;
   }
   .text_box {
