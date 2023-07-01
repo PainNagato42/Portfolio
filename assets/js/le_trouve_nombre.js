@@ -194,10 +194,18 @@ btnCoeur.addEventListener("click", () => {
         containVie.appendChild(coeurPlus);
         pdv += 1;
         btnCoeur.remove();
+        if(pdv === 2) {
+            oneVie.classList.remove("anim_vie");
+        }
     } else {
         containVie.removeChild(containVie.lastChild);
         containVie.removeChild(containVie.lastChild);
         pdv -= 1;
         btnCoeur.remove();
+        if (pdv === 0) {
+            defaite.style.display = "block";
+            mask.style.display = "block";
+            resultD.textContent = random;
+        }
     }
 })
