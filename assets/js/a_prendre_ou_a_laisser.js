@@ -119,7 +119,7 @@ boxs.forEach(box => {
                                         } else {
                                             textBox.textContent = "Votre numéro contenait";
                                             if(window.screen.width <= 768) {
-                                                textBox.classList.add("text_15");
+                                                textBox.classList.add("text_12");
                                             }
                                             if(window.screen.width >= 769 && window.screen.width <= 1180) {
                                                 textBox.classList.add("text_25");

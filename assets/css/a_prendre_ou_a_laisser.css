@@ -244,11 +244,11 @@ a {
     font-size: 18px;
     margin-top: -40px;
   }
-  .text_15 {
-    font-size: 15px;
+  .text_12 {
+    font-size: 12px;
   }
   .popup, .popup_banquier, .popup_offre_accepter {
-    top: 250px;
+    top: 210px;
     left: 10%;
     width: 80%;
     height: 250px;
