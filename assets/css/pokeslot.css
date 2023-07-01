@@ -136,7 +136,7 @@ body {
 .btn_moins,
 .btn_plus {
   width: 60px;
-  height: 60px;
+  height: 25px;
 }
 .btn-spin {
   right: 50%;
@@ -145,7 +145,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 120px;
-  height: 120px;
+  height: 50px;
 }
 .btn_moins {
   background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_pokeslot/pok_btn_moins.png");

@@ -101,56 +101,6 @@ btnChoixTables.addEventListener("click", () => {
 btnMises.forEach(btnMise => {
     btnMise.addEventListener("click", (e) => {
         if (parseInt(money.textContent) >= parseInt(btnMise.textContent)) {
-            if(window.screen.width >= 769 && window.screen.width <= 1180) {
-                let left = 26
-                for (let i = 0; i <= 5; i++) {
-                    if (i + 2 === 2) {
-                        if (btnMise.textContent.length === i + 2) {
-                            mise.style.left = left + "px";
-                            miseSplit.style.left = left + "px";
-                        }
-                    } else {
-                        if (btnMise.textContent.length === i + 2) {
-                            mise.style.left = left - 4 + "px";
-                            miseSplit.style.left = left - 4 + "px";
-                        }
-                        left = left - 5;
-                    }
-                }
-            } else if (window.screen.width <= 768) {
-                let left = 12
-                for (let i = 0; i <= 5; i++) {
-                    if (i + 2 === 2) {
-                        if (btnMise.textContent.length === i + 2) {
-                            mise.style.left = left + "px";
-                            miseSplit.style.left = left + "px";
-                        }
-                    } else {
-                        if (btnMise.textContent.length === i + 2) {
-                            mise.style.left = left - 4 + "px";
-                            miseSplit.style.left = left - 4 + "px";
-                        }
-                        left = left - 5;
-                    }
-                }
-            } else {
-                let left = 37
-                for (let i = 0; i <= 5; i++) {
-                    if (i + 2 === 2) {
-                        if (btnMise.textContent.length === i + 2) {
-                            mise.style.left = left + "px";
-                            miseSplit.style.left = left + "px";
-                        }
-                    } else {
-                        if (btnMise.textContent.length === i + 2) {
-                            mise.style.left = left - 8 + "px";
-                            miseSplit.style.left = left - 8 + "px";
-                        }
-                        left = left - 7;
-                    }
-                }
-
-            }
             setTimeout(() => {
                 if (parseInt(money.textContent) < parseInt(mise.textContent)) {
                     for (let i = 2; i <= 3; i++) {
@@ -395,6 +345,10 @@ actions[3].addEventListener("click", () => {
         actions[3].classList.add("none");
         containPlayer.classList.add("justify_around");
         containPlayer.classList.add("large_90");
+        mise.classList.add("left_28"); 
+        if(window.screen.width <= 768) {
+          mise.classList.add("left_26");  
+        }
         miseSplit.textContent = parseInt(mise.textContent);
         money.textContent -= miseSplit.textContent
         miseSplit.classList.remove("none");
@@ -1052,7 +1006,11 @@ function reset() {
         sommePlayerSplit.textContent = "";
         miseSplit.textContent = "";
         miseSplit.classList.add("none");
-
+        if(mise.classList.contains("left_28")) {
+            mise.classList.remove("left_28");
+        } else if (mise.classList.contains("left_26")) {
+            mise.classList.remove("left_26");
+        }
     }
     btnMises.forEach(btnMise => {
         if (parseInt(money.textContent) < parseInt(btnMise.textContent)) {

@@ -40,10 +40,17 @@ a {
 }
 #miseOk,
 #miseOkSplit {
-  top: -105px;
-  left: 37px;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 15px;
   border-radius: 999px;
+}
+.left_28 {
+  left: 28%;
+}
+#miseOkSplit {
+  left: 72%;
 }
 #choix_table {
   position: absolute;
@@ -316,8 +323,7 @@ input.check_none {
   #miseOk,
   #miseOkSplit {
     font-size: 1.4rem;
-    left: 6px;
-    top: -84px;
+    top: 203px;
   }
   .somme-card {
     font-size: 1.1rem;
@@ -394,14 +400,13 @@ input.check_none {
   #miseOk,
   #miseOkSplit {
     font-size: 1.4rem;
-    left: 6px;
-    top: -76px;
+    top: 170px;
   }
-  .miseLeft24 {
-    left: 12% !important;
+  .left_26 {
+    left: 26% !important;
   }
   #miseOkSplit {
-    left: 60%;
+    left: 75%;
   }
   .large_30 {
     width: 80%;
