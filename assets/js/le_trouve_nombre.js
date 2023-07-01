@@ -139,6 +139,7 @@ valider.addEventListener("click", () => {
         divHist.appendChild(hist);
         divHist.appendChild(div);
     } else if (random == parseInt(choix.textContent)) {
+        info.style.zIndex = "0";
         victoire.style.display = "block";
         mask.style.display = "block";
         responce.classList.add("bravo");
@@ -150,6 +151,7 @@ valider.addEventListener("click", () => {
     } else if (pdv == 1) {
         oneVie.classList.add("anim_vie");
     } else if (pdv == 0) {
+        info.style.zIndex = "0";
         defaite.style.display = "block";
         mask.style.display = "block";
         resultD.textContent = random;
@@ -205,6 +207,7 @@ btnCoeur.addEventListener("click", () => {
         pdv -= 1;
         btnCoeur.remove();
         if (pdv === 0) {
+            info.style.zIndex = "0";
             defaite.style.display = "block";
             mask.style.display = "block";
             resultD.textContent = random;
