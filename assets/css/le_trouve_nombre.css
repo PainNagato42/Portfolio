@@ -209,7 +209,7 @@ h3 {
     right: 3%;
     width: initial;
     height: initial;
-    padding: 8px 15px;
+    padding: 2px 15px;
     background-color: rgb(249, 170, 80);
     box-shadow: 0 8px rgb(219, 136, 40);
 }
@@ -286,10 +286,10 @@ h1 {
     font-size: 18px;
 }
 .retour, .suppr, .coeur {
-    width: 55px;
+    width: 60px;
 }
 .info {
-    top: 8%;
+    top: 10%;
     right: 0;
 }
 .info:hover {
