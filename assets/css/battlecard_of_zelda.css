@@ -37,7 +37,7 @@ a {
   height: 20px;
 }
 .level {
-  top: -10%;
+  top: -5%;
   font-size: 1.4rem;
 }
 .player {
@@ -361,6 +361,7 @@ input.check_none {
     top: 63%;
   }
   .level {
+    top: -8%;
     font-size: 0.7rem;
   }
   .combo {
