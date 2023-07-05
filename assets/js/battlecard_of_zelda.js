@@ -194,7 +194,7 @@ function reset() {
             mask.style.display = "block";
         }
         if(lvl === 13) {
-            document.querySelector(".level").style.fontSize = "0.6rem";
+            document.querySelector(".level").style.fontSize = "0.5rem";
         }
         barre_life = 100;
         opponentLife.style.width = 100 + "%";
