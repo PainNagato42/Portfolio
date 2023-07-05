@@ -37,6 +37,7 @@ a {
   height: 20px;
 }
 .level {
+  top: -10%;
   font-size: 1.4rem;
 }
 .player {
@@ -321,7 +322,7 @@ input.check_none {
     top: 28%;
   }
   .opponent {
-    right: 48%;
+    right: 53%;
     top: 24%;
   }
   .contain_opponent_life {

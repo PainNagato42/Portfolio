@@ -193,6 +193,9 @@ function reset() {
             document.querySelector(".popup p").style.color = "#2aa928";
             mask.style.display = "block";
         }
+        if(lvl === 13) {
+            document.querySelector(".level").style.fontSize = "0.6rem";
+        }
         barre_life = 100;
         opponentLife.style.width = 100 + "%";
         opponent();
