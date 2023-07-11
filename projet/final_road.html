@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://PainNagato42.github.io/Portfolio/assets/css/final_road.css">
+    <script src="https://PainNagato42.github.io/Portfolio/assets/classes/classes_final_road/Player.js"></script>
+    <script src="https://PainNagato42.github.io/Portfolio/assets/classes/classes_final_road/Cars.js"></script>
+    <script src="https://PainNagato42.github.io/Portfolio/assets/js/final_road.js" defer></script>
+    <title>Road</title>
+</head>
+
+<body>
+    <header class="small_none">
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://PainNagato42.github.io/Portfolio/">Retour</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="info">
+            <p class="select medium_none small_none">Sélectionner un véhicule avec la touche du clavier associé</p>
+            <p class="level">Level: <span id="level">1</span></p>
+        </div>
+        <div class="absolute load none">
+            <p class="anim_load">Chargement...</p>
+            <p class="small_none">Diriger le vehicule avec droite et gauche du clavier</p>
+        </div>
+        <div class="absolute center">
+            <div class="absolute choix">
+                <p class="text_center none">Choix du véhicule</p>
+                <div class="large_100 flex justify_around">
+                    <div data-id="1" class="relative small_touch">
+                        <p>1</p>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_final_road/voiture_bleue.png" alt="">
+                    </div>
+                    <div data-id="2" class="relative small_touch">
+                        <p>2</p>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_final_road/voiture_noire.png" alt="">
+                    </div>
+                    <div data-id="3" class="relative small_touch">
+                        <p>3</p>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_final_road/voiture_rouge.png" alt="">
+                    </div>
+                </div>
+                <div class="large_100 flex justify_around">
+                    <div data-id="4" class="relative small_touch">
+                        <p>4</p>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_final_road/voiture_rose.png" alt="">
+                    </div>
+                    <div data-id="5" class="relative small_touch">
+                        <p>5</p>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_final_road/voiture_verte.png" alt="">
+                    </div>
+                    <div data-id="6" class="relative small_touch">
+                        <p>6</p>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_final_road/f1.png" alt="">
+                    </div>
+                </div>
+                <div class="large_100 flex justify_around">
+                    <div data-id="a" class="relative small_touch">
+                        <p>a</p>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_final_road/moto_violette.png" alt="">
+                    </div>
+                    <div data-id="z" class="relative small_touch">
+                        <p>z</p>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_final_road/moto_jaune.png" alt="">
+                    </div>
+                    <div data-id="e" class="relative small_touch">
+                        <p>e</p>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_final_road/moto_verte.png" alt="">
+                    </div>
+                </div>
+                <div class="large_100 flex justify_around">
+                    <div data-id="r" class="relative small_touch">
+                        <p>r</p>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_final_road/moto_rouge.png" alt="">
+                    </div>
+                    <div data-id="t" class="relative small_touch">
+                        <p>t</p>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_final_road/moto_bleue.png" alt="">
+                    </div>
+                    <div data-id="y" class="relative small_touch">
+                        <p>y</p>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_final_road/moto_noire.png" alt="">
+                    </div>
+                </div>
+                <div class="large_100 flex justify_around margin_left_14">
+                    <div data-id="u" class="relative small_touch">
+                        <p>u</p>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_final_road/camion.png" alt="">
+                    </div>
+                    <div data-id="i" class="relative small_touch">
+                        <p>i</p>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_final_road/avion.png" alt="">
+                    </div>
+                    <div data-id="o" class="relative small_touch">
+                        <p>o</p>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_final_road/vaisseau.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="popup absolute flex justify_center align_center none">
+                <div>
+                    <p></p>
+                    <div>
+                        <a class="btn small_100"
+                            href="https://PainNagato42.github.io/Portfolio/projet/final_road.html">Rejouer</a>
+                        <a class="btn btn_retour small_100 small_block"
+                            href="https://PainNagato42.github.io/Portfolio/">Retour</a>
+                    </div>
+                </div>
+            </div>
+            <canvas width="360" height="600">Votre navigateur ne prend pas en charge l'élément canvas.</canvas>
+        </div>
+        <div class="absolute d-left none"></div>
+        <div class="absolute d-right none"></div>
+    </main>
+</body>
+
+</html>
