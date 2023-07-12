@@ -69,6 +69,9 @@ h3 {
 .contain_presentation p {
   font-size: 1.3rem;
 }
+.contain_contact a {
+  z-index: 10;
+}
 .contain_presentation span {
   font-weight: bolder;
 }
