@@ -23,14 +23,12 @@ canvas {
     transform: translate(-50%,-50%);
     border: 3px solid #222;
     background-color: white;
-    width: 80%;
-    height: 80%;
 }
 .current_color, .palette, .stroke_size {
     position: absolute;
 }
 .palette {
-    left: 7%;
+    left: 7.8%;
     top: 17%;
 }
 .current_color {
@@ -38,7 +36,7 @@ canvas {
     width: 60px;
     height: 60px;
     top: 9%;
-    left: 10%;
+    left: 11%;
 }
 .stroke_size {
     font-size: 1.5rem;
@@ -68,6 +66,9 @@ canvas {
     display: flex;
     flex-wrap: wrap;
 }
+.none {
+    display: none;
+}
 /**********************************************/
 /* MEDIAQUERIES */
 @media (min-width: 760px) and (max-width: 1180px) {
@@ -88,14 +89,17 @@ canvas {
     img {
         width: 75%;
     }
-    .stroke_size {
-        top: 1%;
-    }
     .stroke_size p {
         font-size: 1.2rem;
     }
     .size {
         font-size: 1rem;
+    }
+    .medium_none {
+        display: none;
+    }
+    .medium_block {
+        display: block;
     }
 }
 @media (max-width: 759px) {
@@ -120,5 +124,11 @@ canvas {
     .size {
         font-size: 1rem;
         padding: 3px;
+    }
+    .small_none {
+        display: none;
+    }
+    .small_block {
+        display: block;
     }
 }
