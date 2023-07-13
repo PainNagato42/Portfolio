@@ -6,9 +6,19 @@
 body {
     background-color: #f1f1f1;
 }
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 0.5% 0;
+}
+header nav ul li a {
+    color: rgb(107, 225, 107);
+    margin-left: 3%;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
 canvas {
     position: absolute;
-    top: 50%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%,-50%);
     border: 3px solid #222;
@@ -21,18 +31,18 @@ canvas {
 }
 .palette {
     left: 7%;
-    top: 10%;
+    top: 17%;
 }
 .current_color {
     border: 1px solid #222;
     width: 60px;
     height: 60px;
-    top: 2%;
+    top: 9%;
     left: 10%;
 }
 .stroke_size {
     font-size: 1.5rem;
-    top: 2%;
+    top: 8%;
     left: 16%;
 }
 .size, .color, img {
@@ -92,7 +102,6 @@ canvas {
     .current_color {
         width: 40px;
         height: 40px;
-        top: 2%;
         left: 2%;
     }
     .palette {
@@ -104,9 +113,6 @@ canvas {
     }
     img {
         width: 65%;
-    }
-    .stroke_size {
-        top: 1%;
     }
     .stroke_size p {
         font-size: 1.2rem;

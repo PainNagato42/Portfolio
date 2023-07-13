@@ -373,6 +373,10 @@ h3 {
   .contain_connaissances {
     font-size: 0.8rem;
   }
+  .onglet_projets {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
   .margin-contain-game {
     margin: 10px auto;
   }
