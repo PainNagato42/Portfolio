@@ -104,7 +104,7 @@ canvas {
 }
 @media (max-width: 759px) {
     .small_canvas {
-        overflow: hidden;
+        left: 54%;
     }
     .current_color {
         width: 40px;
