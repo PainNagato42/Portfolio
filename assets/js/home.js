@@ -2,6 +2,8 @@ const divOnglets = document.querySelectorAll(".onglet");
 const containChoix = document.querySelectorAll(".contain_choix");
 const divsHeader = document.querySelectorAll(".div_header");
 const accueils = document.querySelectorAll(".accueil");
+const ongletsProjets = document.querySelectorAll(".onglet_projets");
+const projets = document.querySelectorAll(".projets");
 const containAnimation = document.querySelector(".contain_animation");
 const containAnimationAccueil = document.querySelector(".contain_animation_accueil");
 const divOpacityDescription = document.querySelector("#opacity_description");
@@ -38,6 +40,27 @@ divsHeader.forEach(divheader => {
                 }, 500)
             });
         }
+    })
+})
+
+ongletsProjets.forEach(ongletP => {
+    ongletP.addEventListener("click", ()=> {
+        if(!ongletP.classList.contains("active_projets")) {
+            ongletP.classList.add("active_projets")
+        }
+        let index = ongletP.getAttribute("data-ongletProjet");
+        for (let i = 0; i < ongletsProjets.length; i++) {
+            if (ongletsProjets[i].getAttribute("data-ongletProjet") !== index) {
+                ongletsProjets[i].classList.remove("active_projets")
+            }
+        }
+        projets.forEach(projet => {
+            if (index === projet.getAttribute("data-projets")) {
+                projet.classList.remove("none");
+            } else {
+                projet.classList.add("none");
+            }
+        })
     })
 })
 

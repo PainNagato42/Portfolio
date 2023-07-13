@@ -158,6 +158,16 @@ h3 {
 .contain_contact {
   max-width: 350px;
 }
+.onglets_projets {
+  color: var(--theme-Color-1);
+  font-family: var(--font-principal);
+  font-size: 1.6rem;
+  margin-top: 25px;
+}
+.onglet_projets {
+  cursor: pointer;
+  z-index: 20;
+}
 .contain_game {
   position: relative;
   overflow: hidden;
@@ -198,7 +208,7 @@ h3 {
     color: #111;
   }
 }
-.active_header {
+.active_header, .active_projets {
   border-bottom: 3px dotted var(--theme-Color-1);
 }
 .active {
