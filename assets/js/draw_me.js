@@ -113,6 +113,7 @@ if (window.screen.width >= 1180) {
         draw(e);
     })
     mediumCanvas.addEventListener("touchstart", (e) => {
+        e.preventDefault();
         position(e);
         drawActive = true;
     })
