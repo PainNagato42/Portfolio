@@ -987,6 +987,9 @@ footer .contact .reseau a {
     font-size: 1.2rem;
     margin-top: 29px;
   }
+  .brevet-special {
+    font-size: 1rem;
+  }
   .presentation h1 {
     margin-bottom: 40px;
     font-size: 0.8rem;
