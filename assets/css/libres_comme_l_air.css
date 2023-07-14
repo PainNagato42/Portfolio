@@ -1,0 +1,1155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/********************************/
+/* MISE EN FORME */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #111;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+/*************************************/
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 32px;
+  z-index: 999;
+  transition: 0.6s;
+}
+
+header ul ul {
+  display: none;
+  position: absolute;
+  top: 38%;
+  left: 43.4%;
+}
+
+header li {
+  list-style-type: none;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+header li:hover ul {
+  display: block;
+}
+
+header a,
+header li {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #fff;
+  font-family: "Dosis", sans-serif;
+}
+
+header a:hover,
+header li:hover {
+  color: #fa9719;
+}
+
+header #home:hover {
+  fill: #fa9719;
+}
+
+.header-active {
+  background-color: #fff;
+  box-shadow: 0 -3px 10px #111;
+  align-items: center;
+  padding: 0;
+}
+
+.header-active .logo {
+  width: 55%;
+  padding-left: 32px;
+}
+
+.header-active #home {
+  display: none;
+}
+#home2 {
+  position: absolute;
+  top: 32%;
+}
+.header-active #home2 {
+  display: block;
+}
+
+.header-active ul ul {
+  background-color: #fff;
+  top: 76%;
+  left: 44.2%;
+}
+
+.header-active ul ul li {
+  padding: 0 20px;
+}
+
+.header-active a,
+.header-active li {
+  color: #111;
+}
+
+.nav-cache {
+  position: absolute;
+  transform: translateX(700px);
+  display: none;
+}
+
+.nav-cache a {
+  text-decoration: none;
+  color: #fff;
+  font-size: "Dosis", sans-serif;
+  font-size: 1.8rem;
+  display: block;
+  line-height: 48px;
+  border-top: 1px solid #fff;
+  background-color: rgba(52, 46, 110, 0.9);
+}
+
+.nav-affiche {
+  display: block;
+  animation: menu 0.6s ease-in-out;
+  animation-fill-mode: forwards;
+  z-index: 100;
+}
+
+@keyframes menu {
+  0% {
+    transform: translateX(700px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/***************************************/
+/* FIL D'ARIANE */
+.ariane {
+  margin-left: 130px;
+  font-size: 0.8rem;
+}
+
+.ariane a {
+  color: #111;
+}
+
+/***************************************/
+/* POPUP */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  font-family: "Dosis", sans-serif;
+  transform: translate(-50%, -50%);
+  border: 1px solid #111;
+  font-size: 1.5rem;
+  padding: 32px;
+}
+
+.croix-popup {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  cursor: pointer;
+}
+
+/******************************************/
+/* TITRES */
+h1,
+h2 {
+  font-family: "Changa One", cursive;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-top: 43px;
+}
+
+h1 {
+  color: #fff;
+}
+
+h2 {
+  color: #342e6e;
+  margin-bottom: 50px;
+}
+
+h3 {
+  color: #fa9719;
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+/********************************************/
+/* DECORATION */
+.deco-gauche-bleu,
+.deco-droite-bleu,
+.deco-gauche-blanc,
+.deco-droite-blanc {
+  display: inline-block;
+  width: 141px;
+  height: 58px;
+  margin-top: 20px;
+}
+
+.deco-gauche-bleu {
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/deco_ailes_bleu_gauche.png");
+  margin-right: 10px;
+}
+
+.deco-droite-bleu {
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/deco_ailes_bleu_droite.png");
+  margin-left: 10px;
+}
+
+.deco-gauche-blanc {
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/deco_ailes_blanc_gauche.png");
+  margin-right: 10px;
+}
+
+.deco-droite-blanc {
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/deco_ailes_blanc_droite.png");
+  margin-left: 10px;
+}
+
+.deco-gauche-bleu-small,
+.deco-droite-bleu-small,
+.deco-gauche-blanc-small,
+.deco-droite-blanc-small {
+  display: inline-block;
+  width: 76px;
+  height: 31px;
+  margin-top: 20px;
+}
+
+.deco-gauche-bleu-small {
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/deco_ailes_bleu_small_gauche.png");
+  margin-right: 10px;
+}
+
+.deco-droite-bleu-small {
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/deco_ailes_bleu_small_droite.png");
+  margin-left: 10px;
+}
+
+.deco-gauche-blanc-small {
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/deco_ailes_blanc_small_gauche.png");
+  margin-right: 10px;
+}
+
+.deco-droite-blanc-small {
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/deco_ailes_blanc_small_droite.png");
+  margin-left: 10px;
+}
+
+/***********************************************/
+/* METEO */
+.meteo {
+  position: absolute;
+  top: 66%;
+  right: 1%;
+  background-color: #fff;
+  border: 1px solid #111;
+  padding: 16px;
+}
+
+.meteo .ville {
+  font-size: 1.2rem;
+}
+
+.meteo .degres {
+  font-size: 1.6rem;
+}
+
+.small-meteo {
+  position: fixed;
+  left: 5%;
+  top: 20%;
+  width: 40px;
+  height: 40px;
+  background-color: #fa9719;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*********************************************/
+/* ARTICLE | PRESENTATION | GALERIE | AVIS */
+article {
+  margin: 0 0 50px;
+}
+
+article a {
+  text-decoration: none;
+}
+
+article h3,
+article img {
+  margin-bottom: 24px;
+}
+
+.presentation {
+  background-color: #556793;
+  color: #fff;
+  padding: 0 0 50px;
+}
+
+.presentation h1 {
+  margin-bottom: 40px;
+}
+
+.presentation img {
+  padding: 10px;
+}
+
+.presentation div.large-50:nth-child(2) {
+  padding-left: 6%;
+  margin-top: 25px;
+}
+
+.presentation p:not(p:nth-child(3)) {
+  margin-bottom: 32px;
+}
+
+.galerie h2 {
+  margin-bottom: 32px;
+}
+
+.galerie div {
+  margin-bottom: 16px;
+}
+
+.galerie div.large-25 {
+  overflow: hidden;
+}
+
+.galerie img {
+  transition: 0.5s;
+}
+
+.galerie div.large-25:hover img {
+  transform: scale(1.2);
+}
+
+.avis {
+  background-color: #556793;
+  color: #fff;
+  padding: 0 0 50px;
+}
+
+.avis h2 {
+  color: #fff;
+}
+
+.avis .commentaire {
+  border: 1px solid #fff;
+  padding: 32px;
+  max-width: 750px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+/*****************************************************/
+/* NEWSLETTER | BACK-TO-TOP */
+.newsletter {
+  background-color: #342e6e;
+  color: #fff;
+  padding: 24px 0;
+}
+
+.newsletter p {
+  font-size: 1.2rem;
+  margin-left: 200px;
+}
+
+.newsletter p span {
+  color: #fa9719;
+}
+
+.newsletter input[type="email"] {
+  width: 40%;
+  padding: 6px 12px;
+  border: none;
+  outline: none;
+}
+
+.newsletter input[type="submit"] {
+  background-color: #fa9719;
+  font-family: "Changa One", cursive;
+  border: none;
+  outline: none;
+  color: #556793;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.newsletter input[type="submit"]:hover {
+  background-color: #556793;
+  color: #fa9719;
+}
+
+.newsletter p.erreur {
+  margin-top: 16px;
+  margin-left: 32px;
+  color: #fa9719;
+  font-size: 0.8rem;
+}
+
+.back-top {
+  position: fixed;
+  right: 5%;
+  bottom: 12%;
+  width: 40px;
+  height: 40px;
+  background-color: #fa9719;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*********************************************/
+/* FORMULAIRE CONTACT */
+.formulaire {
+  background-color: #556793;
+  color: #fff;
+  padding: 32px;
+  margin: 50px;
+}
+
+.formulaire p {
+  font-size: 1.4rem;
+}
+
+.formulaire form div,
+.formulaire p:last-of-type {
+  margin-bottom: 32px;
+}
+
+.formulaire label {
+  color: #fa9719;
+  margin-left: 300px;
+}
+
+.formulaire input,
+.formulaire textarea,
+.formulaire input[type="submit"] {
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+}
+
+.formulaire input[type="submit"] {
+  background-color: #fa9719;
+  color: #342e6e;
+  font-family: "Changa One", cursive;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.formulaire input[type="submit"]:hover {
+  background-color: #342e6e;
+  color: #fa9719;
+}
+
+/**********************************************/
+/* FOOTER */
+footer {
+  background-color: #444;
+  padding: 32px 200px;
+  color: #fff;
+}
+
+footer p {
+  line-height: 20px;
+}
+
+footer li {
+  line-height: 23px;
+  list-style-type: none;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fa9719;
+}
+
+footer address,
+footer .horaire {
+  margin-left: -5px;
+}
+
+footer address {
+  font-style: initial;
+}
+
+footer address span {
+  font-size: 1.2rem;
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+footer .mention {
+  font-size: 0.7rem;
+  text-decoration: underline;
+  margin-top: 32px;
+}
+
+footer .mention a:nth-child(2) {
+  margin: 0 24px;
+}
+
+footer .contact {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+footer .contact .reseau {
+  padding: 8px 0 16px;
+}
+
+footer .contact .reseau a {
+  padding: 0 10px;
+}
+
+/**************************/
+/* MISE EN PAGE */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container-galerie {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.shadow {
+  box-shadow: 0 10px 20px #111;
+}
+
+.large-none {
+  display: none;
+}
+
+/**************************/
+/* SLIDER */
+.slider {
+  position: relative;
+}
+
+.slogan {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  font-family: "Changa One", cursive;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.slogan span {
+  color: #fa9719;
+}
+
+.left,
+.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.left {
+  left: 2%;
+}
+
+.right {
+  right: 2%;
+}
+
+.image-slide {
+  display: none;
+}
+
+.image-slide.active {
+  display: block;
+  animation: fade 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logos {
+  position: absolute;
+  bottom: 3%;
+  left: 4%;
+}
+
+.logos img {
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.logos img:nth-child(3) {
+  margin-bottom: -15px;
+}
+
+.logos p {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.nat-geo,
+.ffp,
+.ffvl,
+.guinness {
+  position: absolute;
+  display: none;
+  top: 63%;
+  left: 8%;
+  border: 1px solid #111;
+  width: 400px;
+  padding: 32px;
+  color: #fff;
+  background-color: #556793;
+}
+
+.nat-geo {
+  left: 2%;
+  width: 600px;
+}
+
+.ffvl {
+  width: 450px;
+}
+
+/**************************/
+/* BOUTON */
+.btn {
+  border: 1px solid #342e6e;
+  padding: 8px 18px;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #342e6e;
+  font-family: "Changa One", cursive;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  color: #fa9719;
+  border-color: #fa9719;
+}
+
+.btn-slogan {
+  border-color: #fa9719;
+  color: #fa9719;
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+
+.btn-slogan:hover {
+  border-color: #342e6e;
+  color: #342e6e;
+}
+
+.btn-meteo {
+  margin-top: 32px;
+}
+
+.btn-prestation {
+  border-color: #fa9719;
+  color: #fa9719;
+  margin-top: 32px;
+  font-size: 1.3rem;
+}
+
+.btn-prestation:hover {
+  background-color: #fa9719;
+  color: #342e6e;
+}
+
+.btn-brevet {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/**************************/
+/* WIDTH */
+.large-100 {
+  width: 100%;
+}
+
+.large-50 {
+  width: 49%;
+}
+
+.large-30 {
+  width: 30%;
+}
+
+.large-25 {
+  width: 24%;
+}
+
+.large-30 {
+  width: 30%;
+}
+
+.large-15 {
+  width: 15%;
+}
+
+/**************************/
+/* BG-COLOR */
+.bg-color-firstColor {
+  background-color: #342e6e;
+}
+
+/**************************/
+/* MARGIN / PADDING */
+.margin-top-172 {
+  margin-top: 172px;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
+/***************************/
+/* ALL PAGE PRESTATIONS */
+.wingsuit,
+.parapente,
+.parachute {
+  background-color: #556793;
+  color: #fff;
+  width: 1025px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.wingsuit p,
+.parapente p,
+.parachute p {
+  line-height: 22px;
+}
+
+.wingsuit div.large-50:nth-child(2),
+.parapente div.large-50:nth-child(2),
+.parachute div.large-50:nth-child(2) {
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.wingsuit div.large-50:nth-child(2) p:not(p:nth-child(3)),
+.parapente div.large-50:nth-child(2) p:not(p:nth-child(3)),
+.parachute div.large-50:nth-child(2) p:not(p:nth-child(3)) {
+  margin-bottom: 32px;
+}
+
+.wingsuit .tarifs h3,
+.parapente .tarifs h3,
+.parachute .tarifs h3 {
+  font-family: "Changa One", cursive;
+  color: #fa9719;
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+}
+
+.wingsuit .tarifs p,
+.parapente .tarifs p,
+.parachute .tarifs p {
+  font-size: 1.2rem;
+}
+
+.wingsuit .tarifs p span,
+.parapente .tarifs p span,
+.parachute .tarifs p span {
+  color: #fa9719;
+}
+
+.wingsuit div:nth-child(3) {
+  margin: 16px 0 32px;
+  padding-right: 77px;
+}
+
+.parapente div:nth-child(3),
+.parachute div:nth-child(3) {
+  margin-bottom: 16px;
+}
+
+.parapente div:nth-child(5),
+.parachute div:nth-child(5) {
+  margin: 16px 0 32px;
+}
+
+.parachute div:nth-child(5) p {
+  margin-bottom: 16px;
+}
+
+/***************************/
+/* PAGE BREVET */
+.brevet,
+.brevet-specialite {
+  background-color: #556793;
+  color: #fff;
+  padding: 32px;
+}
+
+.brevet h3,
+.brevet-specialite h3 {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.brevet p,
+.brevet-specialite p {
+  line-height: 22px;
+}
+
+.brevet p:not(p:last-of-type),
+.brevet-specialite p:not(p:last-of-type) {
+  margin-bottom: 32px;
+}
+
+.brevet {
+  max-width: 791px;
+  margin: 0 auto 16px;
+}
+
+.brevet-specialite {
+  position: relative;
+  margin: 5px 8px;
+  height: 480px;
+}
+
+/***************************/
+/* MEDIAQUERIES */
+@media (min-width: 760px) and (max-width: 1180px) {
+  .medium-block {
+    display: block;
+  }
+  .medium-none {
+    display: none;
+  }
+  .medium-flex {
+    display: flex;
+  }
+  header {
+    background-color: #342e6e;
+    position: initial;
+  }
+  .meteo {
+    position: fixed;
+    top: 19%;
+    right: 71%;
+    z-index: 20;
+  }
+  .meteo p {
+    font-size: 0.8rem;
+  }
+  .meteo .ville,
+  .meteo .degres {
+    font-size: 1.2rem;
+  }
+  .meteo .ville,
+  .meteo p:last-of-type {
+    text-align: center;
+  }
+  .meteo .croix {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    cursor: pointer;
+  }
+  .btn-meteo {
+    margin-top: 10px;
+  }
+  .presentation img {
+    width: 110%;
+  }
+  .presentation div.large-50:nth-child(2) {
+    margin-top: -6px;
+  }
+  .medium-margin-top-25 {
+    margin-top: 25px;
+  }
+
+  div.flex:last-child .brevet-specialite.large-30.small-90:first-child {
+    font-size: 0.8rem;
+  }
+  .formulaire label {
+    margin-left: 202px
+  };
+  .medium-100 {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .small-none {
+    display: none;
+  }
+  .small-block {
+    display: block;
+  }
+  .small-flex {
+    display: flex;
+  }
+  .small-grid {
+    display: grid;
+  }
+  .small-auto {
+    margin: 0 auto;
+  }
+  .small-100 {
+    width: 100%;
+  }
+  .small-90 {
+    width: 90%;
+  }
+  .small-80 {
+    width: 80%;
+  }
+  .small-40 {
+    width: 40%;
+  }
+  .small-20 {
+    width: 20%;
+  }
+  .flex-order-1 {
+    order: -1;
+  }
+  header {
+    background-color: #342e6e;
+    position: initial;
+  }
+  header img.logo {
+    width: 200px;
+  }
+  h1,
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 29px;
+  }
+  .presentation h1 {
+    margin-bottom: 40px;
+    font-size: 0.8rem;
+  }
+  .ariane {
+    margin-left: 30px;
+  }
+  .popup {
+    font-size: 1rem;
+  }
+  .meteo {
+    position: fixed;
+    top: 32%;
+    right: 16%;
+  }
+  .meteo p {
+    font-size: 0.8rem;
+  }
+  .meteo .ville,
+  .meteo .degres {
+    font-size: 1.2rem;
+  }
+  .meteo .ville,
+  .meteo p:last-of-type {
+    text-align: center;
+  }
+  .meteo .croix {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    cursor: pointer;
+  }
+  .btn-meteo {
+    margin-top: 10px;
+  }
+  article h3 {
+    margin-top: 24px;
+  }
+  .galerie div {
+    display: flex;
+    justify-content: center;
+  }
+  .avis {
+    padding-bottom: 10px;
+  }
+  .avis h2 {
+    margin-bottom: 32px;
+  }
+  .avis .commentaire {
+    width: 90%;
+  }
+  .presentation {
+    padding: 0 16px 20px;
+  }
+  .presentation div.large-50:nth-child(2) {
+    padding-left: 0;
+  }
+  .wingsuit div:nth-child(3) {
+    padding-right: 0;
+  }
+  .brevet div.flex {
+    justify-content: center;
+  }
+  div.flex:last-child .brevet-specialite.large-30.small-90:first-child {
+    font-size: 0.9rem;
+  }
+  .newsletter p,
+  .newsletter input[type="email"] {
+    margin-left: 32px;
+  }
+  .newsletter input[type="email"] {
+    width: 60%;
+  }
+  .newsletter p:nth-child(2) {
+    margin-bottom: 24px;
+  }
+  footer {
+    padding: 32px 32px 0;
+    text-align: center;
+  }
+  .contact {
+    margin-bottom: 32px;
+  }
+  .formulaire {
+    width: 80%;
+    margin: 0 auto 40px;
+  }
+  .formulaire p {
+    font-size: 0.8rem;
+  }
+  .formulaire label {
+    margin-left: 0;
+  }
+  .large-15 {
+    width: auto;
+  }
+  .formulaire input,
+  .formulaire textarea {
+    width: 100%;
+  }
+  .mention {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  .small-margin-top-16 {
+    margin-top: 16px;
+  }
+  .small-padding-32 {
+    padding: 32px 0;
+  }
+}
+
+/***************************/
+/* MENU HAMBURGER */
+.hamb {
+  position: absolute;
+  top: 0;
+  right: 4%;
+  width: 128px;
+  height: 128px;
+  cursor: pointer;
+}
+
+.barre1,
+.barre2,
+.barre3 {
+  background-color: #fa9719;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 5px;
+}
+
+.barre2 {
+  top: 40%;
+}
+
+.barre3 {
+  top: 60%;
+}
+
+.croix .barre1 {
+  opacity: 0;
+}
+
+.croix .barre2 {
+  transform: rotate(45deg);
+  transition: 0.6s;
+  left: 30%;
+  top: 50%;
+}
+
+.croix .barre3 {
+  transform: rotate(-45deg);
+  transition: 0.6s;
+  left: 30%;
+  top: 50%;
+}
+
+.hamb .barre1,
+.hamb .barre2,
+.hamb .barre3 {
+  transition: 0.6s;
+}

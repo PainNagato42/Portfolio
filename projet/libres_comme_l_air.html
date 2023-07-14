@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://PainNagato42.github.io/Portfolio/assets/css/libres_comme_l_air.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Dosis:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <title>Libres comme l'air - Formation et club de saut extrême à Grenoble</title>
+    <meta name="description"
+        content="Libres comme l'air, formation et club de saut extrême à Grenoble vous propose de nombreuses prestations, le parapente, le parachute,  le wingsuit et les brevets. Nous sommes accrédités par la FFP et la FFVL." />
+</head>
+
+<body onscroll="backToTop(), changeHeader();">
+    <!--********************************************************************* -->
+    <!-- ***************************** HEADER ******************************* -->
+    <!-- ******************************************************************** -->
+    <header class="flex justify-between">
+        <a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air.html"><img class="logo" src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/logo.png"
+                alt="" /></a>
+        <div class="large-none medium-block small-block" onclick="menu();">
+            <div class="hamb">
+                <div class="barre1"></div>
+                <div class="barre2"></div>
+                <div class="barre3"></div>
+            </div>
+        </div>
+        <nav class="medium-none small-none">
+            <ul class="flex">
+                <li><a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air.html"
+                        title="Revenir à l'accueil - Libres comme l'air formation et club de saut extrême">
+                        <img id="home" src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/home.svg" alt="">
+                        <img id="home2" class="large-none" src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/home_2.png" alt="">
+                    </a></li>
+                <li>Prestations
+                    <ul>
+                        <li><a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/parapente.html"
+                                title="Le parapente - Libres comme l'air formation et club de saut extrême">Parapente</a>
+                        </li>
+                        <li><a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/parachute.html"
+                                title="Le parachute - Libres comme l'air formation et club de saut extrême">Parachute</a>
+                        </li>
+                        <li><a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/wingsuit.html"
+                                title="Le wingsuit - Libres comme l'air formation et club de saut extrême">Wingsuit</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/brevets.html"
+                        title="Les brevets - Libres comme l'air formation et club de saut extrême">Brevets</a></li>
+                <li><a href="#"
+                        title="La météo - Libres comme l'air formation et club de saut extrême">Météo</a></li>
+                <li><a href="#"
+                        title="Le calendrier - Libres comme l'air formation et club de saut extrême">Calendrier</a></li>
+                <li><a href="#"
+                        title="Les tarifs - Libres comme l'air formation et club de saut extrême">Tarifs</a></li>
+                <li><a href="#"
+                        title="Les records - Libres comme l'air formation et club de saut extrême">Records</a></li>
+                <li><a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/contact.html"
+                        title="Contact - Libres comme l'air formation et club de saut extrême">Contact</a></li>
+                <li><a href="tel:0600000000"
+                        title="Numéro de téléphone - Libres comme l'air formation et club de saut extrême">06 00 00 00
+                        00</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--********************************************************************* -->
+    <!-- ***************************** SLIDER ******************************* -->
+    <!-- ******************************************************************** -->
+    <div class="slider medium-none small-none">
+        <img class="large-100 image-slide active"
+            src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/Vol_en_parapente_duo.jpg"
+            alt="Vol en parapente en duo à côter des montagnes" />
+        <img class=" large-100 image-slide"
+            src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/wingsuit_slider.jpg" alt="" />
+        <img class=" large-100 image-slide"
+            src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/tandem-parachute.jpg" alt="" />
+            <div class="left" onclick="slidePrecedent();">
+            <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/fleche-gauche.svg" alt="">
+        </div>
+        <div class="right" onclick="slideSuivant();">
+            <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/fleche-droite.svg" alt="">
+        </div>
+        <div class="slogan text-center">
+            <p><strong><span>Libres comme l'air</span><br />va vous faire<br />décoiffer</strong></p>
+            <a class="btn btn-slogan" href="#"
+                title="Les reservations - Libres comme l'air formation et club de saut extrême">Reserver</a>
+        </div>
+        <div class="logos">
+            <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/logo_National_Geographique.png"
+                alt="Logo de National géographique" onclick="afficheNatGeo();" />
+            <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/logo_FFP.png"
+                alt="Logo de la fédération française du parachutisme" onclick="afficheFFP();" />
+            <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/logo__FFVL.png"
+                alt="Logo de la fédération française du vol libre" onclick="afficheFFVL();" />
+            <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/logo_Guinness_World_Records.png"
+                alt="Logo de la Guiness world records" onclick="afficheGuinness();" />
+            <p>Cliquez sur les logos pour avoir plus d'informations.</p>
+        </div>
+    </div>
+    <div class="nat-geo">
+        <p>National Geographic, connue sous l'ancien nom de National Geographic Channel, est une chaîne de télévision
+            spécialisée américaine et internationale. Elle diffuse essentiellement des documentaires sur la nature et
+            sur la science, mais également sur la culture et l'histoire. Elle est éditée par la National Geographic
+            Society. Tout comme le magazine dont elle est issue, la chaîne National Geographic est déclinée dans de
+            nombreux pays.<br />Lancée au Royaume-Uni, en Europe et en Australie en septembre 1997, la chaîne est
+            aujourd'hui disponible dans 162 pays et en 27 langues, dans 230 millions de foyers.</p>
+        <div class="croix-popup" onclick="fermeNatGeo();">
+            <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/cross.svg" alt="">
+        </div>
+    </div>
+    <div class="ffp">
+        <p>La Fédération française de parachutisme (souvent abrégé FFP) est chargée de l’organisation et de la promotion
+            du parachutisme sport. Créée le 10 décembre 1949, elle est délégataire du Ministère des Sports, de la
+            Jeunesse, de l'Éducation populaire et de la Vie associative depuis 1972.</p>
+        <div class="croix-popup" onclick="fermeFFP();">
+            <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/cross.svg" alt="">
+        </div>
+    </div>
+    <div class="ffvl">
+        <p>La Fédération française de Vol Libre (FFVL) est une association française loi de 1901 fondée le 12 mai 1974.
+            Elle gère par délégation ministérielle officielle six activités principales (et disciplines associées) : le
+            deltaplane, le parapente, le cerf-volant, le kite terrestre (snowkite et landkite), le speed riding et le
+            boomerang. En 2012, elle compte 31 835 licenciés1, et, en 2015, 31 8592. En tant que fédération agréée, elle
+            accueille aussi les licenciés de kitesurf.</p>
+        <div class="croix-popup" onclick="fermeFFVL();">
+            <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/cross.svg" alt="">
+        </div>
+    </div>
+    <div class="guinness">
+        <p>Le Livre Guinness des records est un livre de référence, publié une fois par an et recensant une collection
+            de records du monde reconnus au niveau international, qui sont à la fois des prouesses humaines et
+            naturelles.</p>
+        <div class="croix-popup" onclick="fermeGuinness();">
+            <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/cross.svg" alt="">
+        </div>
+    </div>
+    <div class="nav-cache medium-100 small-100 text-center">
+        <nav>
+            <a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/parapente.html" title="Le parapente - Libres comme l'air formation et club de saut extrême">Parapente</a>
+            <a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/parachute.html" title="Le parachute - Libres comme l'air formation et club de saut extrême">Parachute</a>
+            <a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/wingsuit.html" title="Le wingsuit - Libres comme l'air formation et club de saut extrême">Wingsuit</a>
+            <a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/brevets.html" title="Les brevets - Libres comme l'air formation et club de saut extrême">Brevets</a>
+            <a href="#" title="La météo - Libres comme l'air formation et club de saut extrême">Météo</a>
+            <a href="#" title="Le calendrier - Libres comme l'air formation et club de saut extrême">Calendrier</a>
+            <a href="#" title="Les tarifs - Libres comme l'air formation et club de saut extrême">Tarifs</a>
+            <a href="#" title="Les records - Libres comme l'air formation et club de saut extrême">Records</a>
+            <a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/contact.html" title="Contact - Libres comme l'air formation et club de saut extrême">Contact</a>
+        </nav>
+    </div>
+    <main>
+        <div class="popup text-center small-80">
+            <p>Bienvenue sur notre site web,</p>
+            <p>nous vous offrons une réduction</p>
+            <p>de 5% lors de votre première reservation.</p>
+            <div class="croix-popup" onclick="fermePopup();">
+                <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/cross.svg" alt="">
+            </div>
+        </div>
+        <!--********************************************************************* -->
+        <!-- ***************************** METEO ******************************** -->
+        <!-- ******************************************************************** -->
+        <div class="meteo medium-none small-none">
+            <div class="croix large-none medium-block small-block" onclick="cacheMeteo();">
+                <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/cross.svg" alt="">
+            </div>
+            <p class="ville">Grenoble</p>
+            <div class="flex align-center justify-center text-center">
+                <img class="small-20"
+                    src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/picto_meteo.png"
+                    alt="Pictogramme météo partiellement nuageux" />
+                <div>
+                    <p>Partiellement nuageux</p>
+                    <p class="degres">28 °C</p>
+                </div>
+            </div>
+            <p>Aujourd'hui, Lundi 15 Mars</p>
+            <div class="text-center">
+                <a class="btn btn-meteo" href="#"
+                    title="Voir météo semaine - Libres comme l'air formation et club de saut extrême">Voir la
+                    semaine</a>
+            </div>
+        </div>
+        <div class="small-meteo large-none medium-flex small-flex align-center justify-center" onclick="afficheMeteo();">
+            <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/sun.svg" alt="">
+        </div>
+        <!--********************************************************************* -->
+        <!-- ***************************** PRESTATION *************************** -->
+        <!-- ******************************************************************** -->
+        <div class="container">
+            <div class="flex justify-center">
+                <span class="deco-gauche-bleu small-none"></span><span
+                    class="deco-gauche-bleu-small large-none small-block"></span>
+                <h2>Nos prestations</h2><span class="deco-droite-bleu small-none"></span><span
+                    class="deco-droite-bleu-small large-none small-block"></span>
+            </div>
+            <article class="flex text-center justify-center">
+                <div class="large-25 small-100 small-grid">
+                    <a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/parapente.html"
+                        title="Information parapente - Libres comme l'air formation et club de saut extrême">
+                        <h3>Parapente</h3>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/picto_parapente.png"
+                            alt="Pictogramme parapente" />
+                    </a>
+                    <a class="btn small-40 small-auto" href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/parapente.html"
+                        title="Information parapente - Libres comme l'air formation et club de saut extrême">En savoir
+                        plus</a>
+                </div>
+                <div class="large-25 small-100 small-grid">
+                    <a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/parachute.html"
+                        title="Information parachute - Libres comme l'air formation et club de saut extrême">
+                        <h3>Parachute</h3>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/picto_parachute.png"
+                            alt="Pictogramme parachute" />
+                    </a>
+                    <a class="btn small-40 small-auto" href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/parachute.html"
+                        title="Information parachute - Libres comme l'air formation et club de saut extrême">En savoir
+                        plus</a>
+                </div>
+                <div class="large-25 small-100 small-grid">
+                    <a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/wingsuit.html"
+                        title="Information wingsuit - Libres comme l'air formation et club de saut extrême">
+                        <h3>Wingsuit</h3>
+                        <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/picto_wingsuit.png"
+                            alt="Pictogramme wingsuit" />
+                    </a>
+                    <a class="btn small-40 small-auto" href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/wingsuit.html"
+                        title="Information wingsuit - Libres comme l'air formation et club de saut extrême">En savoir
+                        plus</a>
+                </div>
+            </article>
+        </div>
+        <!--********************************************************************* -->
+        <!-- ***************************** PRESENTATION ************************* -->
+        <!-- ******************************************************************** -->
+        <div class="presentation">
+            <div class="container">
+                <div class="flex justify-center text-center">
+                    <span class="deco-gauche-blanc small-none"></span><span
+                        class="deco-gauche-blanc-small large-none small-block"></span>
+                    <h1>Libres comme l'air, club<br /> et école de formation<br /> de saut à Grenoble</h1><span
+                        class="deco-droite-blanc small-none"></span><span
+                        class="deco-droite-blanc-small large-none small-block"></span>
+                </div>
+                <div class="flex">
+                    <div class="large-50 small-100">
+                        <img class="small-100"
+                            src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/Locaux_Libres_comme_l'air.jpg"
+                            alt="Les locaux de Libres comme l'air" />
+                    </div>
+                    <div class="large-50 small-100">
+                        <p><strong>L’école a été fondée par Christophe Desbruères et a ouvert en mai
+                                1988.</strong> Après plus de 30 ans de fonctionnement, la richesse de notre expérience
+                            nous permet d’assurer une formation complète du débutant au compétiteur ainsi que la
+                            formation de moniteurs au diplôme fédéral et d’état (Label FFVL et FFP)</p>
+                        <p>Notre école a été aussi à l’initiative de nombreuses actions auprès des jeunes : Stages
+                            spécifiques jeunes (12–14 ans), Création des premières compétitions en parapente en France.
+                            Notre situation géographique, près de la chartreuse nous différencie des autres écoles des
+                            par un climat plus ensoleillé.
+                        </p>
+                        <p>Par ailleurs, nous sommes la seule structure française située sur le versant sud des chaînes
+                            de montagnes. Cette particularité géographique confère à nos sites les caractéristiques
+                            suivantes : ils sont généralement protégés du vent du nord, ils sont praticables par vent du
+                            sud </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--********************************************************************* -->
+        <!-- ***************************** GALERIE ****************************** -->
+        <!-- ******************************************************************** -->
+        <div class="container-galerie">
+            <div class="flex justify-center">
+                <span class="deco-gauche-bleu small-none"></span><span
+                    class="deco-gauche-bleu-small large-none small-block"></span>
+                <h2>Galerie photo</h2><span class="deco-droite-bleu small-none"></span><span
+                    class="deco-droite-bleu-small large-none small-block"></span>
+            </div>
+            <div class="galerie flex justify-between">
+                <div class="large-25 small-100">
+                    <img class="large-100 small-80"
+                        src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/Wingsuit_montagne.jpg"
+                        alt="Une personne qui fait du wingsuit vers les montagnes" />
+                </div>
+                <div class="large-25 small-100">
+                    <img class="large-100 small-80"
+                        src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/Parapente_duo.jpg"
+                        alt="deux personnes sur une parapente" />
+                </div>
+                <div class="large-25 small-100">
+                    <img class="large-100 small-80"
+                        src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/parachute_bord_avion.jpg"
+                        alt="deux personnes dans l'avion prêt à sauter" />
+                </div>
+                <div class="large-25 small-100">
+                    <img class="large-100 small-80"
+                        src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/Parachute_cote_avion.jpg"
+                        alt="deux personnes qui ont juste sauter de l'avion" />
+                </div>
+                <div class="large-25 small-100">
+                    <img class="large-100 small-80"
+                        src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/Parachute_en_duo.jpg"
+                        alt="deux personnes dans les air qui prennent la pose pour la photo" />
+                </div>
+                <div class="large-25 small-100">
+                    <img class="large-100 small-80"
+                        src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/Groupe_wingsuit.jpg"
+                        alt="un groupe de sept personnes en wingsuit devant l'avion" />
+                </div>
+                <div class="large-25 small-100">
+                    <img class="large-100 small-80"
+                        src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/wingsuit_desert.jpg"
+                        alt="trois personnes dans les air en wingsuit au dessus d'un désert" />
+                </div>
+                <div class="large-25 small-100">
+                    <img class="large-100 small-80"
+                        src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/Parachute_ocean.jpg"
+                        alt="deux personnes en l'air au dessus d'une ile" />
+                </div>
+            </div>
+        </div>
+        <!--********************************************************************* -->
+        <!-- ***************************** AVIS ********************************* -->
+        <!-- ******************************************************************** -->
+        <div class="avis">
+            <div class="container">
+                <div class="flex justify-center">
+                    <span class="deco-gauche-blanc small-none"></span><span
+                        class="deco-gauche-blanc-small large-none small-block"></span>
+                    <h2>Avis des élèves</h2><span class="deco-droite-blanc small-none"></span><span
+                        class="deco-droite-blanc-small large-none small-block"></span>
+                </div>
+                <div class="commentaire">
+                    <p>Très bonne formation, Merci!</p>
+                    <p class="text-end">Kévin
+                    <p>
+                </div>
+                <div class="commentaire">
+                    <p>Formateurs très sympathiques, explications claires et très bonne école.</p>
+                    <p class="text-end">Eva</p>
+                </div>
+                <div class="commentaire">
+                    <p>Excellente école, je vous en remercie.</p>
+                    <p class="text-end">Patrick</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--********************************************************************* -->
+    <!-- ***************************** NEWSLETTER *************************** -->
+    <!-- ******************************************************************** -->
+    <div class="newsletter">
+        <div class="container flex">
+            <div class="large-50 meduim-100 small-100">
+                <p><span>Abonnez-vous</span> à notre newsletter</p>
+                <p>pour ne rien rater</p>
+            </div>
+            <form method="POST" action="#" class="flex large-50 meduim-100 small-100">
+                <input type="email" id="email" name="email" placeholder="Votre e-mail" />
+                <input onclick="verifieEmail();" type="submit" value="Je m'abonne" />
+                <p class="erreur"></p>
+            </form>
+        </div>
+    </div>
+    <!--********************************************************************* -->
+    <!-- ***************************** BACK-TO-TOP ************************** -->
+    <!-- ******************************************************************** -->
+    <div class="back-top flex justify-center align-center large-none">
+        <a href="#">
+            <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/top.svg" alt="">
+        </a>
+    </div>
+    <!--********************************************************************* -->
+    <!-- ***************************** FOOTER ******************************* -->
+    <!-- ******************************************************************** -->
+    <footer>
+        <div class="container flex justify-between align-center">
+            <div class="small-100">
+                <nav>
+                    <ul>
+                        <li><a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/parapente.html"
+                                title="Le parapente - Libres comme l'air formation et club de saut extrême">Parapente</a>
+                        </li>
+                        <li><a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/parachute.html"
+                                title="Le parachute - Libres comme l'air formation et club de saut extrême">Parachute</a>
+                        </li>
+                        <li><a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/wingsuit.html"
+                                title="Le wingsuit - Libres comme l'air formation et club de saut extrême">Wingsuit</a>
+                        </li>
+                        <li><a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/brevets.html"
+                                title="Les brevets - Libres comme l'air formation et club de saut">Brevets</a></li>
+                        <li><a href="#"
+                                title="La météo - Libres comme l'air formation et club de saut">Météo</a></li>
+                        <li><a href="#"
+                                title="Le calendrier - Libres comme l'air formation et club de saut">Calendrier</a></li>
+                        <li><a href="#"
+                                title="Les tarifs - Libres comme l'air formation et club de saut">Tarifs</a></li>
+                        <li><a href="#"
+                                title="Les records - Libres comme l'air formation et club de saut">Records</a></li>
+                        <li><a href="https://PainNagato42.github.io/Portfolio/projet/libres_comme_l_air/contact.html"
+                                title="Contact - Libres comme l'air formation et club de saut">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="small-100 small-padding-32">
+                <address>
+                    <p><span>Libres comme l'air</span></p>
+                    <p>10 rue de l'adresse</p>
+                    <p>38000 Grenoble</p>
+                </address>
+                <div class="horaire">
+                    <p>du Lundi au Vendredi</p>
+                    <p>de 8h à 17h</p>
+                </div>
+                <div class="mention flex justify-between">
+                    <a href="#">CGV</a>
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Crédits</a>
+                </div>
+            </div>
+            <div class="contact text-center flex-order-1 small-100">
+                <div>
+                    <p>Suivez-nous</p>
+                    <div class="reseau">
+                        <a href="https://fr-fr.facebook.com/" title="Notre compte facebook">
+                            <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/facebook.svg" alt="logo de facebook">
+                        </a>
+                        <a href="https://twitter.com/?lang=fr" title="Notre compte twitter">
+                            <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_libres_comme_l_air/twitter.svg" alt="logo de twitter">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <p>Contactez-nous</p>
+                    <a href="tel:0600000000">06 00 00 00 00</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="https://PainNagato42.github.io/Portfolio/assets/js/libres_comme_l_air/script.js" type="text/javascript"></script>
+    <script src="https://PainNagato42.github.io/Portfolio/assets/js/libres_comme_l_air/slider.js" type="text/javascript"></script>
+</body>
+
+</html>
