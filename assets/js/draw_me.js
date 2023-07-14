@@ -128,6 +128,7 @@ if (window.screen.width >= 1180) {
         draw(e);
     })
     smallCanvas.addEventListener("touchstart", (e) => {
+        e.preventDefault();
         position(e);
         drawActive = true;
     })
