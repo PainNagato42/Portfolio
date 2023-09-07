@@ -89,6 +89,7 @@ class Player {
             })
         } else {
             containGame.addEventListener("touchmove", (e) => {
+                e.preventDefault();
                 if((this.x < e.touches[0].clientX + this.width - 40 && this.x > e.touches[0].clientX - this.width - 20) && (this.y < e.touches[0].clientY + this.height - 50 && this.y > e.touches[0].clientY - this.height - 50)) {
                     this.x = ((e.touches[0].clientX) - (canvas.getBoundingClientRect().x - 4)) - this.width / 2;
                     this.y = ((e.touches[0].clientY) - (canvas.getBoundingClientRect().y - 4)) - this.height / 2;
