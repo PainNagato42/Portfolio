@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+}
+header {
+  background-color: rgb(0, 0, 0);
+  padding: 0.5% 0;
+}
+header nav ul li a {
+  color: rgb(107, 225, 107);
+  margin-left: 3%;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+canvas {
+  border: 2px solid gray;
+}
+canvas, .load, .contain_choice_player, .level_end,
+.player_destroy {
+  background-color: black;
+}
+.color_modeste {
+  color: rgb(206, 253, 255);
+}
+.color_ninja {
+  color: rgb(245, 116, 116);
+}
+.color_brute {
+  color: rgb(182, 129, 232);
+}
+.color_stats {
+  color: rgb(255, 221, 134);
+}
+a {
+  text-decoration: none;
+  color: #111;
+}
+h2, h4 {
+  margin-top: 25px;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.player_destroy h4 {
+  text-decoration: none;
+  margin-top: 150px;
+  color: rgb(239, 107, 107);
+}
+h3, .stats p:first-child{
+  margin-top: 40px;
+  font-size: 1.8rem;
+}
+.choice_player p, .stats {
+  font-size: 1.3rem;
+}
+.stats, .stats p:nth-child(2) {
+  margin-top: 50px;
+}
+.stats p:not(.stats p:first-child) {
+  line-height: 40px;
+}
+.btn, 
+.player_destroy div {
+  margin-top: 250px;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 4px;
+  background-color: azure;
+  color: #111;
+}
+.btn_next_level, .btn_end {
+  margin-top: 110px;
+}
+.player_destroy div:nth-child(2) {
+  margin-top: 70px;
+}
+.player_destroy div:nth-child(3) {
+  margin-top: 25px;
+}
+.home, .choice_mode, .contain_choice_player,
+.load, .level_end, .contain_game,
+.player_destroy {
+  text-align: center;
+  width: 360px;
+  height: 600px;
+  color: white;
+}
+.home p {
+  font-size: 3rem;
+  padding: 8px 5px;
+  text-align: start;
+}
+.home p:nth-child(2) {
+  text-align: end;
+}
+.home p:first-child, .home div.btn {
+  margin-top: 100px;
+}
+.choice_mode div:nth-child(2) {
+  margin-top: 80px;
+}
+.choice_mode div:nth-child(3) {
+  margin-top: 50px;
+  background-color: rgb(244, 133, 133);
+}
+canvas,
+.home,
+.choice_mode,
+.contain_choice_player,
+.choice_player img,
+.left,
+.right,
+.warning,
+.load,
+.level_end,
+.contain_game,
+.player_destroy {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.left, .right {
+  background-image: url("https://PainNagato42.github.io/Portfolio/assets/img/img_universe_spaceship/row.png");
+  width: 50px;
+  height: 37px;
+  cursor: pointer;
+}
+.left {
+  transform: rotateY(-180deg);
+}
+.right {
+  left: 85%;
+}
+.left {
+  top: 47%;
+  left: 9%
+}
+.contain_choice_player p.info_action {
+  font-size: 0.8rem;
+  margin-top: 60px;
+}
+.contain_game, .contain_hearts {
+  display: flex;
+}
+.contain_game {
+  justify-content: space-between;
+  padding: 2px 6px;
+}
+.warning, .load {
+  text-transform: uppercase;
+}
+.warning {
+  color: yellow;
+  font-size: 4.2rem;
+  animation: animRed infinite linear 0.3s;
+  cursor: none;
+}
+
+@keyframes animRed {
+  0% {
+    color: yellow;
+  }
+  100% {
+    color: red;
+  }
+}
+.load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  z-index: 999;
+}
+.none {
+  display: none;
+}
+
+/**********************************************/
+/* MEDIAQUERIES */
+@media (max-width: 759px) {
+  .small_none {
+    display: none;
+  }
+}

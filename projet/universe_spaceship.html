@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://PainNagato42.github.io/Portfolio/assets/css/universe_spaceship.css">
+    <script src="https://PainNagato42.github.io/Portfolio/assets/classes/classes_universe_spaceship/Player.js" defer></script>
+    <script src="https://PainNagato42.github.io/Portfolio/assets/classes/classes_universe_spaceship/PlayerShoot.js" defer></script>
+    <script src="https://PainNagato42.github.io/Portfolio/assets/classes/classes_universe_spaceship/Alien.js" defer></script>
+    <script src="https://PainNagato42.github.io/Portfolio/assets/classes/classes_universe_spaceship/AlienShoot.js" defer></script>
+    <script src="https://PainNagato42.github.io/Portfolio/assets/classes/classes_universe_spaceship/Blast.js" defer></script>
+    <script src="https://PainNagato42.github.io/Portfolio/assets/classes/classes_universe_spaceship/PowerUp.js" defer></script>
+    <script src="https://PainNagato42.github.io/Portfolio/assets/classes/classes_universe_spaceship/Target.js" defer></script>
+    <script src="https://PainNagato42.github.io/Portfolio/assets/classes/classes_universe_spaceship/ElecShoot.js" defer></script>
+    <script src="https://PainNagato42.github.io/Portfolio/assets/js/universe_spaceship.js" defer></script>
+    <title>Universe Spaceship</title>
+</head>
+
+<body>
+    <header class="small_none">
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://PainNagato42.github.io/Portfolio/">Retour</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <canvas width="360" height="600">Votre navigateur ne prend pas en charge l'élément canvas.</canvas>
+        <div class="home">
+            <p class="title">Universe</p>
+            <p class="title">Spaceship</p>
+            <div id="start" class="btn">Start</div>
+        </div>
+        <div class="choice_mode none">
+            <h2>Choix du mode de jeu</h2>
+            <div id="normal" class="btn">Normal</div>
+            <div id="extreme" class="btn">Extrême</div>
+        </div>
+        <div class="contain_choice_player none">
+            <h2>Choix du vaisseau</h2>
+            <div class="choice_player" data-spaceship="1">
+                <h3 class="color_modeste">Le Modeste</h3>
+                <div>
+                    <p>Vie : <span class="color_modeste">4</span></p>
+                    <p>Attaque : <span class="color_modeste">Normal</span></p>
+                    <p>Vitesse de tir : <span class="color_modeste">Normal</span></p>
+                </div>
+                <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_universe_spaceship/player_choice.png" alt="">
+                <div class="btn btn_choice" data-choice="1">Choisir ce vaisseau</div>
+            </div>
+            <div class="choice_player none" data-spaceship="2">
+                <h3 class="color_ninja">Le Ninja</h3>
+                <div>
+                    <p>Vie : <span class="color_ninja">2</span></p>
+                    <p>Attaque : <span class="color_ninja">Faible</span></p>
+                    <p>Vitesse de tir : <span class="color_ninja">Rapide</span></p>
+                </div>
+                <img src="https://PainNagato42.github.io/Portfolio/assets/img/img_universe_spaceship/player_choice2.png" alt="">
+                <div class="btn btn_choice" data-choice="2">Choisir ce vaisseau</div>
+            </div>
+            <div class="choice_player none" data-spaceship="3">
+                <h3 class="color_brute">La Brute</h3>
+                <div>
+                    <p>Vie : <span class="color_brute">3</span></p>
+                    <p>Attaque : <span class="color_brute">Fort</span></p>
+                    <p>Vitesse de tir : <span class="color_brute">Lent</span></p>
+                </div>
+                <img src="https://PainNagato42.github.io/Portfolio/img/img_universe_spaceship/player_choice3.png" alt="">
+                <div class="btn btn_choice" data-choice="3">Choisir ce vaisseau</div>
+            </div>
+            <div class="row left"></div>
+            <div class="row right"></div>
+            <p class="info_action"> - Le vaisseau se déplace avec le curseur de la souris (sans clique) <br> - Le tir est automatique</p>
+            <p class="info_action none"> - Le vaisseau se déplace avec le doigt <br> - Le tir est automatique</p>
+        </div>
+        <div class="contain_game none">
+            <div class="contain_hearts"></div>
+            <p>Level : <span></span></p>
+            <p class="warning none">warning</p>
+        </div>
+        <div class="load none">
+            <p>Chargement...</p>
+        </div>
+        <div class="player_destroy none">
+            <h4>Votre vaisseau a explosé</h4>
+            <div class="btn" id="btn_restart_level">Rejouer le niveau</div>
+            <div class="btn" id="btn_restart_game"><a href="https://PainNagato42.github.io/Portfolio/">Recommencer la partie</a></div>
+        </div>
+        <div class="level_end none">
+            <h4>Level <span class="color_stats" id="level_number"></span> réussi</h4>
+            <div class="stats">
+                <p class="color_stats">Statistiques</p>
+                <p>Vaisseaux Alien éliminés : <span class="color_stats" id="alien_destroy"></span></p>
+                <p>Dégâts total infligé : <span class="color_stats" id="all_damage"></span></p>
+                <p>Level recommencer : <span class="color_stats" id="num_restart"></span> fois</p>
+                <p>Vous avez été touché : <span class="color_stats" id="all_hit"></span> fois</p>
+            </div>
+            <div class="btn btn_next_level">Niveau suivant</div>
+            <div class="btn btn_end none"><a href="https://PainNagato42.github.io/Portfolio/">Recommencer la partie</a></div>
+        </div>
+    </main>
+</body>
+
+</html>
