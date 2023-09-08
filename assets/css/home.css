@@ -18,7 +18,8 @@ header,
 .contain_interet p,
 .contain_formation a,
 .contain_formation span,
-.contain_contact a {
+.contain_contact a,
+.new {
   color: var(--theme-Color-1);
 }
 header {
@@ -216,6 +217,12 @@ h3 {
   background-color: var(--theme-Color-1);
   color: #222;
 }
+.new {
+  position: absolute;
+  top: 15%;
+  left: 19.5%;
+  font-family: var(--font-secondaire);
+}
 /***********************************/
 /* LOGO */
 .logo_github {
@@ -377,6 +384,11 @@ h3 {
   .onglet_projets {
     font-size: 0.7rem;
     margin-bottom: 10px;
+  }
+  .new {
+    top: 19.5%;
+    left: 4%;
+    font-size: 0.6rem;
   }
   .margin-contain-game {
     margin: 10px auto;

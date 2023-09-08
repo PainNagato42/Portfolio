@@ -185,4 +185,11 @@ canvas,
   .small_none {
     display: none;
   }
+  #btn_restart_level,
+  #btn_restart_game,
+  .btn_next_level,
+  .btn_end
+   {
+    font-size: 1.4rem;
+   }
 }
